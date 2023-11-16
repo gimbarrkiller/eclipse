@@ -1,0 +1,74 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.global {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 60px;
+  @include tablet {
+    gap: 12px;
+    flex-direction: column;
+  }
+}
+
+.global_first {
+  width: 40%;
+  height: 400px;
+  background-image: url(../../../../assets/images/icons/global-hub.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+  @include laptop {
+    width: 40%;
+    margin-right: -40px;
+  }
+  @include tablet {
+    width: 100%;
+    margin-bottom: -60px;
+    margin-right: 0;
+  }
+}
+
+.global_second {
+  width: 60%;
+  @include laptop {
+    width: 70%;
+  }
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.global_item_title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  background: $gradientTextColor;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: $transparent;
+  @include laptop {
+    margin-bottom: 24px;
+  }
+  @include tablet {
+    text-align: center;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+}
+
+.global_item_subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  @include tablet {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+
+
+  }
+}

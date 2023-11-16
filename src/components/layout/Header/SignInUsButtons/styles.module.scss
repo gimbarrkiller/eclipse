@@ -1,0 +1,11 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  @include tablet {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

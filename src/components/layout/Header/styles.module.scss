@@ -1,0 +1,65 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.header {
+  z-index: 2;
+}
+
+.header_fixed {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(266.09deg, rgba(93, 156, 255, 0.2) 1.15%, rgba(93, 156, 255, 0) 98.69%);
+  box-shadow: 0 14px 24px 0 #0000002B;
+  backdrop-filter: blur(12px);
+}
+
+.header_container {
+  padding: 24px 24px 0;
+  max-width: 1248px;
+  margin: 0 auto;
+  height: 88px;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  @include tablet {
+    padding-top: 0;
+    height: 64px;
+  }
+}
+
+.header_container_fixed {
+  padding-top: 0;
+  height: 64px;
+  transition: height .3s, padding 0.3s;
+}
+
+.header_content {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.header_controls {
+  display: flex;
+  gap: 16px;
+}
+
+.header_controls_flag {
+  border: 1px solid $borderColor;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  height: 48px;
+}
+
+.header_controls_burger {
+  height: 48px;
+  width: 48px;
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+}
+
+.header_controls_burger_icon {
+}

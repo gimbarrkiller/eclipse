@@ -1,0 +1,24 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+$gradientTextColor: linear-gradient(180deg, rgba(61, 142, 254, 0.5) 0%, rgba(158, 61, 254, 0.5) 100%);
+
+.burger {
+  z-index: 2;
+  position: absolute;
+  background: $gradientTextColor;
+  box-shadow: 0 14px 24px 0 #0000002B;
+  height: 68px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding: 0 24px;
+  backdrop-filter: blur(12px);
+  @include tablet {
+    height: calc(100vh - 64px);
+    background: $violet;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+  }
+}

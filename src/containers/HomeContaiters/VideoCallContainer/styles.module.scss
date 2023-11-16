@@ -1,0 +1,60 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.video_call_container {
+  margin-bottom: 160px;
+  @include laptop {
+    margin-bottom: 120px;
+  }
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.video_call_title {
+  position: relative;
+  background: $gradientTextColor;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: $transparent;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  @include laptop {
+    padding-bottom: 24px;
+  }
+  @include tablet {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+}
+
+.video_call_bg_left {
+  position: absolute;
+  left: -58px;
+  top: -100px;
+  z-index: -1;
+}
+
+.video_call_bg_right {
+  position: absolute;
+  right: -24px;
+  top: -100px;
+  z-index: -1;
+  @include laptop {
+    display: none;
+  }
+}
+
+.video_call_bg_center {
+  position: absolute;
+  right: 50%;
+  top: -100px;
+  z-index: -1;
+  @include tablet {
+    right: -24px;
+    top: 100px;
+  }
+}

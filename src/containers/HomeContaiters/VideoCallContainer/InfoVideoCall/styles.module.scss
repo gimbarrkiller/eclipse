@@ -1,0 +1,58 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.card_info {
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, rgba(61, 142, 254, 0.2) 0%, rgba(158, 61, 254, 0.2) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 14px 24px 0 #0000002B;
+  margin-bottom: 160px;
+  @include laptop {
+    margin-bottom: 120px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  @include tablet {
+    margin-bottom: 64px;
+  }
+}
+
+.cards_item_img_container {
+  width: 60%;
+  padding-top: 40px;
+  text-align: center;
+  @include laptop {
+    width: 100%;
+  }
+}
+
+.cards_item_img {
+}
+
+.cards_item_img_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  @include laptop {
+    left: 50%;
+  }
+}
+
+.cards_item_text {
+  width: 40%;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  align-self: center;
+  padding-right: 80px;
+  @include laptop {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,49 @@
+@import 'src/assets/styles/palette';
+
+.button {
+  height: 48px;
+  padding: 13px 32px 14px 32px;
+  border-radius: 8px;
+  background: $gradientOrangeColor;
+  box-shadow: 0 24px 32px 0 $orangeDark;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: $white;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+
+  .children_while_loading {
+    opacity: 0;
+  }
+
+  .loader {
+    position: absolute;
+  }
+
+  &.full_width {
+    width: 100%;
+  }
+
+}
+.bg_transparent {
+  background: $transparent;
+  border: 1px solid $borderColor;
+  box-shadow: none;
+}
+
+.big_height {
+  height: 64px;
+}
+
+.disabled {
+  &:disabled {
+    cursor: not-allowed;
+    background: $gray;
+    color: $textColor;
+    box-shadow: none;
+  }
+}

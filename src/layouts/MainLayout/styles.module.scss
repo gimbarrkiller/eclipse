@@ -1,0 +1,11 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.layout_wrapper {
+  padding: 0 24px;
+  max-width: 1248px;
+  margin: 0 auto;
+  @include tablet {
+    padding: 0 12px;
+  }
+}

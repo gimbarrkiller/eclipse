@@ -1,0 +1,37 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.cards {
+  display: grid;
+  grid-template-areas: 'card1 card2 card3' 'card4 card5 card6';
+  margin-bottom: 160px;
+  @include laptop {
+    margin-bottom: 120px;
+    grid-template-areas: 'card1 card2' 'card4 card3' 'card5 card6';
+  }
+  @include tablet {
+    margin-bottom: 64px;
+    grid-template-areas: 'card1' 'card2' 'card3' 'card4' 'card5' 'card6';
+    gap: 12px;
+  }
+}
+
+.cards_item {
+  border-radius: 20px;
+  padding: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  @include tablet {
+    padding: 24px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.cards_item_bg {
+  background: linear-gradient(180deg, rgba(61, 142, 254, 0.5) 0%, rgba(158, 61, 254, 0.5) 100%),
+  linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 14px 24px 0 #0000002B;
+}

@@ -1,0 +1,93 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.referral_container {
+  margin-bottom: 134px;
+  @include tablet {
+    margin-bottom: 64px;
+  }
+}
+
+.referral_title {
+  position: relative;
+  margin-bottom: 64px;
+  height: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $gradientTextColor;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: $transparent;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  @include tablet {
+    height: 90px;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+}
+
+.referral_title_bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.referral_subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  text-align: -webkit-center;
+  margin-bottom: 80px;
+  @include tablet {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+  li {
+    list-style-type: disc;
+    width: fit-content;
+  }
+}
+
+.referral_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  @include scrollbar
+}
+
+.referral_cards_item {
+  padding: 54px 62px;
+  width: 100%;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 0 24px 24px 0 $gray1;
+  border: 2px solid $borderColor;
+  @include tablet {
+    padding: 54px 18px;
+  }
+}
+
+.referral_cards_item_title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 16px;
+  text-align: center;
+  @include tablet {
+    min-width: 100px;
+  }
+}
+
+.referral_cards_item_subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}

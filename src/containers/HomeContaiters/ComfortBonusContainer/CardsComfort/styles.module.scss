@@ -1,0 +1,77 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @include tablet {
+    gap: 12px;
+  }
+}
+
+.cards_item {
+  display: flex;
+  gap: 24px;
+  background:
+    linear-gradient(180deg, rgba(61, 142, 254, 0.2) 0%, rgba(158, 61, 254, 0.2) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 14px 24px 0 #0000002B;
+  border-radius: 20px;
+  width: calc(50% - 12px);
+  padding: 40px 20px;
+  @include laptop {
+    width: 100%;
+  }
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.cards_item_img {
+  height: fit-content;
+  width: fit-content;
+  @include tablet {
+    align-self: center;
+  }
+}
+
+.cards_item_title {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  @include tablet {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.cards_item_subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  @include tablet {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+}
+
+.cards_item_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cards_item_li {
+  display: flex;
+  gap: 16px;
+}
+
+.cards_item_li_img {
+  margin-top: 4px;
+  margin-bottom: auto;
+}

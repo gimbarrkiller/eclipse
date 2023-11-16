@@ -1,0 +1,21 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.title_border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 12px;
+  background: $gradientOrangeBlackColor;
+  border-image-source: $gradientOrangeBlackColor;
+  box-shadow: 0 0 12px 0 $orangeLight;
+  width: 75px;
+  height: 4px;
+  @include laptop {
+    left: auto;
+  }
+}
+
+.center {
+  left: auto;
+}
