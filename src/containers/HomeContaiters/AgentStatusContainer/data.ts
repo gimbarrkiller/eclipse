@@ -20,4 +20,3 @@ export const data = [
     wagered: '10 000',
   },
 ];
-

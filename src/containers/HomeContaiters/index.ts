@@ -3,3 +3,4 @@ export * from './ReferralBonusContainer';
 export * from './AgentStatusContainer';
 export * from './ComfortBonusContainer';
 export * from './VideoCallContainer';
+export * from './WorkAllDeviceContainer';

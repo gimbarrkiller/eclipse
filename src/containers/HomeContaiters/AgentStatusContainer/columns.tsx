@@ -1,7 +1,7 @@
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 
-export const useColumns = () => {
-  return useMemo(() => [
+export const useColumns = () => (
+  useMemo(() => [
     {
       Header: 'Статус',
       accessor: 'bets',
@@ -14,5 +14,5 @@ export const useColumns = () => {
       Header: 'Командный оборот',
       accessor: 'wagered',
     },
-  ], []);
-};
+  ], [])
+);
