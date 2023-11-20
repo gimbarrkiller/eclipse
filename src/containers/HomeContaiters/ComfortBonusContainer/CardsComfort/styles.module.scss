@@ -14,9 +14,7 @@
 .cards_item {
   display: flex;
   gap: 24px;
-  background:
-    linear-gradient(180deg, rgba(61, 142, 254, 0.2) 0%, rgba(158, 61, 254, 0.2) 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  background: $gradientBlueGray02Color;
   border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
   box-shadow: 0 14px 24px 0 #0000002B;
   border-radius: 20px;

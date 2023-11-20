@@ -41,20 +41,12 @@
 }
 
 .global_item_title {
-  margin-bottom: 40px;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 44px;
-  background: $gradientTextColor;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: $transparent;
+  @include titleGradient;
   @include laptop {
     margin-bottom: 24px;
   }
   @include tablet {
     text-align: center;
-    font-size: 24px;
-    line-height: 26px;
     margin-bottom: 16px;
   }
 }

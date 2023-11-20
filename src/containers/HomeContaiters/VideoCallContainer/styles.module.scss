@@ -12,22 +12,10 @@
 }
 
 .video_call_title {
-  position: relative;
-  background: $gradientTextColor;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: $transparent;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 44px;
-  margin-bottom: 40px;
+  @include titleGradient;
   padding-bottom: 40px;
   @include laptop {
     padding-bottom: 24px;
-  }
-  @include tablet {
-    font-size: 24px;
-    line-height: 26px;
-    margin-bottom: 32px;
   }
 }
 

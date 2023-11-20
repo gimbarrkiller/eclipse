@@ -1,6 +1,6 @@
 import { deviceGoogleIcon, deviceMacIcon, deviceWindowsIcon } from 'assets/images';
 
-export const devices = [
+export const data = [
   {
     icon: deviceWindowsIcon,
     name: 'Windows',
@@ -31,23 +31,14 @@ export const devices = [
   },
 ];
 
-export const after = [
-  [
-    '1',
-    '1',
-    '1',
-    '1',
-  ],
-  [
-    '1',
-    '1',
-    '1',
-    '1',
-  ],
-  [
-    '1',
-    '1',
-    '1',
-    '1',
-  ],
+export const soon = [
+  'Чат-боты',
+  'Файловое хранилище',
+  'Почта и календарь',
+  'Корпоративная база знаний',
+  'Интеграция с корпоративными сервисами',
+  'Интеграция с каталогом пользователей',
+  'Контроль действий пользователя',
+  'Федерации',
+  'Исскустевнный интелект',
 ];

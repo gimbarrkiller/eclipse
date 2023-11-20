@@ -1,0 +1,25 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.questions_container {
+  margin-bottom: 160px;
+  @include laptop {
+    margin-bottom: 120px;
+  }
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.questions_title {
+  @include titleGradient;
+  @include laptop {
+    padding-bottom: 24px;
+  }
+}
+
+.questions_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

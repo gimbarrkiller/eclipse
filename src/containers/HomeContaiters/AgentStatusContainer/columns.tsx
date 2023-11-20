@@ -4,15 +4,15 @@ export const useColumns = () => (
   useMemo(() => [
     {
       Header: 'Статус',
-      accessor: 'bets',
+      accessor: 'status',
     },
     {
       Header: 'Личный оборот',
-      accessor: 'wins',
+      accessor: 'turnover',
     },
     {
       Header: 'Командный оборот',
-      accessor: 'wagered',
+      accessor: 'teamTurnover',
     },
   ], [])
 );

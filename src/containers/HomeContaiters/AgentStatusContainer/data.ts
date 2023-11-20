@@ -1,22 +1,22 @@
 export const data = [
   {
-    bets: 'Seller',
-    wins: '100',
-    wagered: '2 500',
+    status: 'Seller',
+    turnover: '100',
+    teamTurnover: '2 500',
   },
   {
-    bets: 'Advanced seller',
-    wins: '100',
-    wagered: '5 000',
+    status: 'Advanced seller',
+    turnover: '100',
+    teamTurnover: '5 000',
   },
   {
-    bets: 'Premium seller',
-    wins: '100',
-    wagered: '7 500',
+    status: 'Premium seller',
+    turnover: '100',
+    teamTurnover: '7 500',
   },
   {
-    bets: 'Top seller',
-    wins: '100',
-    wagered: '10 000',
+    status: 'Top seller',
+    turnover: '100',
+    teamTurnover: '10 000',
   },
 ];

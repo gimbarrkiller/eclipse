@@ -14,7 +14,7 @@ export const BurgerMenu = memo(() => {
     document.body.style.overflow = 'hidden';
 
     return () => {
-      document.body.style.overflow = ''; // сбросить стиль при размонтировании компонента
+      document.body.style.overflow = '';
     };
   }, [isTablet]);
   return (
