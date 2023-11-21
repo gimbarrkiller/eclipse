@@ -2,6 +2,7 @@
 @import 'src/assets/styles/mixins';
 
 .contact_container {
+  position: relative;
   margin-bottom: 120px;
   @include tablet {
     margin-bottom: 64px;
@@ -89,7 +90,6 @@
 }
 
 .contact_info_icon {
-  width: 100%;
   margin-bottom: 32px;
   @include laptop {
     width: fit-content;
@@ -101,6 +101,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-bottom: 24px;
   @include laptop {
     flex-direction: row;
     justify-content: space-between;
@@ -132,4 +133,22 @@
   }
 }
 
+.contact_info_bg_right {
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  z-index: -1;
+  @include laptop {
+    display: none;
+  }
+}
 
+.contact_info_bg_left {
+  position: absolute;
+  left: -24px;
+  top: 100px;
+  z-index: -1;
+  @include laptop {
+    display: none;
+  }
+}

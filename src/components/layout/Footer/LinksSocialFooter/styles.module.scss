@@ -1,0 +1,32 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.footer_social {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+
+.footer_social_link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+}
+
+.footer_social_link_icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer_social_link_text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+
+}

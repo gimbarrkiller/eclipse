@@ -1,0 +1,17 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.footer_others {
+  grid-area: linksOthers;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 20px;
+}
+
+.footer_navigation_link {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $textVioletColor;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import cx from 'classnames';
 import { Outlet } from 'react-router-dom';
 
-import { Header } from 'components';
+import { Header, Footer } from 'components';
 
 import styles from './styles.module.scss';
 
@@ -16,5 +16,6 @@ export const MainLayout = () => (
     >
       <Outlet />
     </div>
+    <Footer />
   </div>
 );

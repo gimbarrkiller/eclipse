@@ -1,0 +1,101 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.footer {
+  background-color: $violet;
+}
+
+.footer_content {
+  padding: 40px 24px 64px;
+  display: grid;
+  row-gap: 48px;
+  column-gap: 32px;
+  align-items: center;
+  grid-template-areas:
+    'logo logo linksApp linksApp linksApp linksApp linksApp linksApp linksApp linksSocial linksSocial linksSocial'
+    'payLogos payLogos payLogos others1 others1 others1 others1 others1 others2 others2 others2 others2'
+    'border border border border border border border border border border border border'
+    'copyright copyright copyright socialApp socialApp socialApp socialApp socialApp socialApp socialApp socialApp socialApp';
+  max-width: 1248px;
+  margin: 0 auto;
+  @include laptop {
+    padding: 32px 24px 40px;
+    grid-template-areas:
+      'logo logo linksSocial linksSocial linksSocial'
+      'linksApp linksApp others1 others1 others1'
+      'linksApp linksApp others2 others2 others2'
+      'linksApp linksApp payLogos payLogos payLogos'
+      'border border border border border'
+      'copyright copyright socialApp socialApp socialApp';
+    row-gap: 24px;
+    column-gap: 20px;
+  }
+  @include tablet {
+    padding: 24px 12px;
+    grid-template-areas:
+      'logo'
+      'linksSocial'
+      'linksApp'
+      'others1'
+      'others2'
+      'border'
+      'payLogos'
+      'copyright'
+      'socialApp';
+    row-gap: 20px;
+  }
+}
+
+.footer_logo {
+  grid-area: logo;
+  @include tablet {
+    text-align: center;
+  }
+}
+
+.footer_social_link {
+  grid-area: linksSocial;
+}
+
+.footer_pays {
+  grid-area: payLogos;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include laptop {
+    gap: 16px;
+    width: fit-content;
+  }
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+
+.footer_others_first {
+  grid-area: others1;
+}
+
+.footer_others_second {
+  grid-area: others2;
+}
+
+.footer_border {
+  grid-area: border;
+  width: 100%;
+  height: 1px;
+  background: $gradientBorderColor;
+}
+
+.footer_copyright {
+  grid-area: copyright;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+
+.footer_social_app {
+  grid-area: socialApp;
+}

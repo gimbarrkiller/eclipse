@@ -20,9 +20,9 @@ import { Image, ButtonIcon } from 'components';
 import { LinksHead } from './LinksHead';
 
 import { BurgerMenu } from './BurgerMenu';
+import { SignInUsButtons } from './SignInUsButtons';
 
 import styles from './styles.module.scss';
-import { SignInUsButtons } from './SignInUsButtons';
 
 export const Header = memo(() => {
   const isLaptop = useScreenWidth(ScreenWidth.laptop);

@@ -1,4 +1,9 @@
-import { deviceGoogleIcon, deviceMacIcon, deviceWindowsIcon } from 'assets/images';
+import {
+  deviceAppStoreIcon,
+  deviceGoogleIcon,
+  deviceMacIcon,
+  deviceWindowsIcon,
+} from 'assets/images';
 
 export const data = [
   {
@@ -14,7 +19,7 @@ export const data = [
     name: 'Google play',
   },
   {
-    icon: deviceWindowsIcon,
+    icon: deviceAppStoreIcon,
     name: 'App store',
   },
   {

@@ -1,6 +1,6 @@
 import React, { memo, useState } from 'react';
 
-import { contactsIcon, illustrationTgImage } from 'assets/images';
+import { contactsIcon, ellipse3Icon, illustrationTgImage } from 'assets/images';
 
 import {
   Input,
@@ -78,6 +78,14 @@ export const ContactUsContainer = memo(() => {
           </div>
         </div>
       </div>
+      <Image
+        url={ellipse3Icon}
+        className={styles.contact_info_bg_right}
+      />
+      <Image
+        url={ellipse3Icon}
+        className={styles.contact_info_bg_left}
+      />
     </div>
   );
 });

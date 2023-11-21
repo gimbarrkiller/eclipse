@@ -18,10 +18,22 @@ export { default as comfortIcon } from './COMFORT.svg';
 export { default as contactsIcon } from './CONTACTS.svg';
 export { default as globalHubIcon } from './global-hub.png';
 
+export { default as linkTelegramIcon } from './linkTelegram.svg';
+export { default as linkTwitterIcon } from './linkTwitter.svg';
+export { default as linkFacebookIcon } from './linkFacebook.svg';
+export { default as linkLinkedInIcon } from './linkLinkedIn.svg';
+export { default as linkInstagramIcon } from './linkInstagram.svg';
+export { default as linkYoutubeIcon } from './linkYoutube.svg';
+
 export { default as deviceWindowsIcon } from './device-Windows.svg';
+export { default as deviceAppStoreIcon } from './deviceAppStore.svg';
+export { default as deviceWebIcon } from './deviceWeb.svg';
 export { default as deviceMacIcon } from './device-mac.svg';
 export { default as deviceGoogleIcon } from './deviceGoogle.svg';
 export { default as cloudIcon } from './cloud.png';
 export { default as lockIcon } from './lock.png';
 
 export { default as afterBgIcon } from './afterBG.svg';
+
+export { default as visaLogosIcon } from './visaLogos.svg';
+export { default as paypassLogosIcon } from './paypassLogos.svg';
