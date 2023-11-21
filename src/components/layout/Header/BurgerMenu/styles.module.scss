@@ -5,7 +5,7 @@
   z-index: 2;
   position: absolute;
   background: $gradientBlueGray05Color;
-  box-shadow: 0 14px 24px 0 #0000002B;
+  box-shadow: $boxShadow;
   height: 68px;
   display: flex;
   gap: 20px;

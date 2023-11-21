@@ -50,7 +50,7 @@
 .agent_percent {
   background: $gradientBlueGray05Color;
   border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%);
-  box-shadow: 0 14px 24px 0 #0000002B;
+  box-shadow: $boxShadow;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -63,7 +63,7 @@
 .agent_percent_border {
   width: 1px;
   height: 58px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  background: $gradientBorderColor;
 }
 
 .agent_percent_item {

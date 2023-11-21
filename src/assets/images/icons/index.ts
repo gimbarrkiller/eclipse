@@ -15,6 +15,7 @@ export { default as ellipseColor2Icon } from './ellipse-color-2.png';
 export { default as programIcon } from './PROGRAMM.svg';
 export { default as agentIcon } from './AGENT.svg';
 export { default as comfortIcon } from './COMFORT.svg';
+export { default as contactsIcon } from './CONTACTS.svg';
 export { default as globalHubIcon } from './global-hub.png';
 
 export { default as deviceWindowsIcon } from './device-Windows.svg';

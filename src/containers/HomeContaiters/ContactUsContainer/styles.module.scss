@@ -1,0 +1,135 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.contact_container {
+  margin-bottom: 120px;
+  @include tablet {
+    margin-bottom: 64px;
+  }
+}
+
+.contact_title {
+  @include titleGradient;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+  @include laptop {
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+  }
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.contact_title_bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.contact_content {
+  display: flex;
+  border-radius: 20px;
+  @include laptop {
+    flex-direction: column;
+  }
+}
+
+.form {
+  background: linear-gradient(0deg, $white, $white), $gradientBorderColor;
+  border-image-source: $gradientBorderColor;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 40px;
+  width: 60%;
+  @include laptop {
+    padding: 12px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.form_halfs {
+  display: flex;
+  gap: 12px;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.form_btn {
+  width: fit-content;
+  height: 64px;
+  margin-top: 12px;
+}
+
+.contact_info {
+  border-radius: 0 20px 20px 0;
+  background: $gradientBlueGray02Color;
+  border-image-source: $gradientBorderColor;
+  box-shadow: $boxShadow;
+  width: 40%;
+  padding: 0 40px;
+  @include laptop {
+    border-radius: 0 0 20px 20px;
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contact_info_icon {
+  width: 100%;
+  margin-bottom: 32px;
+  @include laptop {
+    width: fit-content;
+    margin-bottom: 12px;
+  }
+}
+
+.contact_info_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @include laptop {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @include tablet {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.contact_info_title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  @include laptop {
+    text-align: center;
+  }
+}
+
+
+.contact_info_subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  @include tablet {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+

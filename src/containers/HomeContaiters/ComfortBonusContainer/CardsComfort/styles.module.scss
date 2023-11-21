@@ -15,8 +15,8 @@
   display: flex;
   gap: 24px;
   background: $gradientBlueGray02Color;
-  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: 0 14px 24px 0 #0000002B;
+  border-image-source: $gradientBorderColor;
+  box-shadow: $boxShadow;
   border-radius: 20px;
   width: calc(50% - 12px);
   padding: 40px 20px;

@@ -11,3 +11,4 @@ export { default as illustrationVideoImage } from './illustrationVideo.png';
 export { default as illustrationChatImage } from './illustrationChat.png';
 export { default as illustrationNoteImage } from './illustrationNote.png';
 export { default as illustrationPuzzleImage } from './illustrationPuzzle.png';
+export { default as illustrationTgImage } from './illustrationTg.png';

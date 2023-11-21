@@ -6,8 +6,8 @@
   border-spacing: 0 4px;
   background: $gradientBlueGray02Color;
   border: 1px solid;
-  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: 0 14px 24px 0 #0000002B;
+  border-image-source: $gradientBorderColor;
+  box-shadow: $boxShadow;
   border-radius: 20px;
   padding: 0 4px;
   background-color: #642bb0;
@@ -51,7 +51,7 @@
     height: 84px;
     color: $white;
     border: 1px solid;
-    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    border-image-source: $gradientBorderColor;
     font-size: 32px;
     font-weight: 700;
     line-height: 35px;

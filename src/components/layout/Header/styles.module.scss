@@ -10,7 +10,7 @@
   top: 0;
   width: 100%;
   background: linear-gradient(266.09deg, rgba(93, 156, 255, 0.2) 1.15%, rgba(93, 156, 255, 0) 98.69%);
-  box-shadow: 0 14px 24px 0 #0000002B;
+  box-shadow: $boxShadow;
   backdrop-filter: blur(12px);
 }
 

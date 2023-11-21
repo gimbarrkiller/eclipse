@@ -8,6 +8,7 @@ import {
   VideoCallContainer,
   WorkAllDeviceContainer,
   PopularQuestionsContainer,
+  ContactUsContainer,
 } from 'containers';
 
 export const HomePage: FC = () => (
@@ -19,5 +20,6 @@ export const HomePage: FC = () => (
     <VideoCallContainer />
     <WorkAllDeviceContainer />
     <PopularQuestionsContainer />
+    <ContactUsContainer />
   </>
 );

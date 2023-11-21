@@ -5,3 +5,4 @@ export * from './ComfortBonusContainer';
 export * from './VideoCallContainer';
 export * from './WorkAllDeviceContainer';
 export * from './PopularQuestionsContainer';
+export * from './ContactUsContainer';
