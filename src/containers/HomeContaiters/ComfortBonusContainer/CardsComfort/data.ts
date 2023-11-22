@@ -8,38 +8,38 @@ import {
 export const cardsData = [
   {
     img: illustrationVideoImage,
-    title: 'Видео - аудио связь',
+    title: 'Comfort_card_video_',
     list: [
-      'Видео чаты',
-      'Видео конференции',
-      'Вебинары',
+      'Comfort_card_video_li_1_',
+      'Comfort_card_video_li_2_',
+      'Comfort_card_video_li_3_',
     ],
   },
   {
     img: illustrationChatImage,
     title: 'Чат',
     list: [
-      'Персональный и коллективные чаты, хранящие историю переписки в приложении',
-      'Возможность обмена файлами между пользователями внутри сети',
-      'Возможность создавать групповые чаты/"комнаты"',
+      'Comfort_card_chat_li_1_',
+      'Comfort_card_chat_li_2_',
+      'Comfort_card_chat_li_3_',
     ],
   },
   {
     img: illustrationNoteImage,
-    title: 'Система управления задачами',
+    title: 'Comfort_card_system_',
     list: [
-      'Создавайте и управляйте задачами не покидая мессенджер',
-      'Отслеживайте прогресс с помощью удобной системы статуса и меток',
-      'Подключайте внешние системы управления задачами к вашему рабочему пространству через механизм интеграции',
+      'Comfort_card_system_li_1_',
+      'Comfort_card_system_li_2_',
+      'Comfort_card_system_li_3_',
     ],
   },
   {
     img: illustrationPuzzleImage,
     title: 'Интеграция с внешними сервисами',
     list: [
-      'Интегрируйте внешние системы управления задач типа Jira и Trello чат ',
-      'Интегрируйте внешние ВКС системы Google Meet, Zoom вебинар',
-      'Возможность интеграции с любым сервисом используя публичное api',
+      'Comfort_card_integration_li_1_',
+      'Comfort_card_integration_li_2_',
+      'Comfort_card_integration_li_3_',
     ],
   },
 ];

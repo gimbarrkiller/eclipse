@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 
 import { links } from '../constants';
@@ -7,6 +8,7 @@ import { links } from '../constants';
 import styles from './styles.module.scss';
 
 export const LinksHead = memo(() => {
+  const { t } = useTranslation('header');
   const { pathname: currentPath } = useLocation();
   return (
     <div className={styles.header_navigation}>
@@ -18,7 +20,7 @@ export const LinksHead = memo(() => {
             [styles.active]: currentPath === pathName,
           })}
         >
-          {title}
+          {t(title)}
         </NavLink>
       ))}
     </div>

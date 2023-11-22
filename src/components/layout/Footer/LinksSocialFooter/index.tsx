@@ -1,5 +1,6 @@
 import React, { FC, memo } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 
 import { useScreenWidth } from 'hooks';
@@ -18,6 +19,7 @@ export const LinksSocialFooter:FC<ILinksSocialFooter> = memo(({
   links,
   classNameContainer,
 }) => {
+  const { t } = useTranslation('footer');
   const isLaptop = useScreenWidth(ScreenWidth.laptop);
   return (
     <div className={cn(styles.footer_social, classNameContainer)}>
@@ -33,7 +35,7 @@ export const LinksSocialFooter:FC<ILinksSocialFooter> = memo(({
           />
           {title && !isLaptop && (
             <div className={styles.footer_social_link_text}>
-              {title}
+              {t(title)}
             </div>
           )}
         </NavLink>

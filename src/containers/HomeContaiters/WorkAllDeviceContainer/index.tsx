@@ -1,4 +1,5 @@
 import React, { memo, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import {
   cloudIcon,
@@ -15,6 +16,7 @@ import { soon, data } from './data';
 import styles from './styles.module.scss';
 
 export const WorkAllDeviceContainer = memo(() => {
+  const { t } = useTranslation('welcome');
   const cardsDevices = useMemo(() => (
     <div className={styles.work_cards}>
       {data.map(({ name, icon }) => (
@@ -26,17 +28,17 @@ export const WorkAllDeviceContainer = memo(() => {
             <Image url={icon} />
           </div>
           <div className={styles.work_cards_item_subtitle}>
-            {name}
+            {t(name)}
           </div>
         </div>
       ))}
     </div>
-  ), []);
+  ), [t]);
 
   const soonTags = useMemo(() => (
     <div className={styles.soon_container}>
       <div className={styles.soon_container_title}>
-        Скоро
+        {t('Soon_title_')}
       </div>
       <div className={styles.soon_cards}>
         {soon.map((text) => (
@@ -49,7 +51,7 @@ export const WorkAllDeviceContainer = memo(() => {
               url={arrowRightIcon}
             />
             <div className={styles.soon_cards_item_title}>
-              {text}
+              {t(text)}
             </div>
           </div>
         ))}
@@ -59,31 +61,31 @@ export const WorkAllDeviceContainer = memo(() => {
         className={styles.soon_container_bg}
       />
     </div>
-  ), []);
+  ), [t]);
 
   return (
     <div className={styles.work_container}>
       <div className={styles.work_title}>
-        Работайте с любых устройств и операционных систем:
+        {t('Work_all_title_')}
         <TitleBorderBottom />
       </div>
       {cardsDevices}
       <div className={styles.work_container_end}>
         <div className={styles.work_container_end_item}>
           <div className={styles.work_container_end_text}>
-            Обеспечьте защиту конфиденциальности данных
+            {t('Work_all_subcard_1_')}
           </div>
         </div>
         <div className={styles.work_container_end_item}>
           <Image url={lockIcon} />
           <div className={styles.work_container_end_text}>
-            TLS Шифрование
+            {t('Work_all_subcard_2_')}
           </div>
         </div>
         <div className={styles.work_container_end_item}>
           <Image url={cloudIcon} />
           <div className={styles.work_container_end_text}>
-            Интеграция с DLP
+            {t('Work_all_subcard_3_')}
           </div>
         </div>
 

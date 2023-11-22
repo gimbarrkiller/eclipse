@@ -8,7 +8,6 @@ import cn from 'classnames';
 
 import { ScreenWidth } from 'appConstants';
 import {
-  unitedKingdomIcon,
   logoImage,
   burgerIcon,
   closeIcon,
@@ -21,6 +20,7 @@ import { LinksHead } from './LinksHead';
 
 import { BurgerMenu } from './BurgerMenu';
 import { SignInUsButtons } from './SignInUsButtons';
+import { LangMenu } from './LangMenu';
 
 import styles from './styles.module.scss';
 
@@ -46,13 +46,6 @@ export const Header = memo(() => {
     setIsOpen(!isOpen);
   }, [isOpen]);
 
-  const flagsControl = useMemo(() => (
-    <ButtonIcon
-      imageURL={unitedKingdomIcon}
-      className={styles.header_controls_flag}
-    />
-  ), []);
-
   const burgerControl = useMemo(() => (
     <ButtonIcon
       imageURL={isOpen ? closeIcon : burgerIcon}
@@ -77,10 +70,10 @@ export const Header = memo(() => {
         <div className={styles.header_content}>
           <Image url={logoImage} />
           {!isLaptop && <LinksHead />}
-          {isLaptop && !isTablet && flagsControl}
+          {isLaptop && !isTablet && <LangMenu />}
         </div>
         <div className={styles.header_controls}>
-          {(!isLaptop || isTablet) && flagsControl}
+          {(!isLaptop || isTablet) && <LangMenu />}
           {isLaptop && burgerControl}
           {!isTablet && <SignInUsButtons />}
         </div>

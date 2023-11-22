@@ -14,27 +14,27 @@ import {
 
 export const linksApp = [
   {
-    title: 'Цены',
+    title: 'Footer_link_1_',
     pathName: PathName.WhatWeOffer,
   },
   {
-    title: 'О нас',
+    title: 'Footer_link_2_',
     pathName: PathName.Sellers,
   },
   {
-    title: 'Скачать',
+    title: 'Footer_link_3_',
     pathName: PathName.ConnectUs,
   },
   {
-    title: 'Центр помощи',
+    title: 'Footer_link_4_',
     pathName: PathName.ConnectUs,
   },
   {
-    title: 'Свидетельства и лицензии',
+    title: 'Footer_link_5_',
     pathName: PathName.ConnectUs,
   },
   {
-    title: 'Карьера',
+    title: 'Footer_link_6_',
     pathName: PathName.ConnectUs,
   },
 ];
@@ -68,57 +68,57 @@ export const linksSocial = [
 
 export const linksOthers = [
   {
-    title: 'Процедура заказа и предоставления услуги на сайте',
+    title: 'Footer_links_others_1_',
     link: PathName.ConnectUs,
   },
   {
-    title: 'Социальная ответственность',
+    title: 'Footer_links_others_2_',
     link: PathName.ConnectUs,
   },
   {
-    title: 'Политика по противодейтсвию коррупции',
+    title: 'Footer_links_others_3_',
     link: PathName.ConnectUs,
   },
 ];
 
 export const linksOthers2 = [
   {
-    title: 'Правила оплаты и безопасность платежей, конфиденциальность информации и отказ от услуги',
+    title: 'Footer_links_others_4_',
     link: PathName.ConnectUs,
   },
   {
-    title: 'Пользовательская документация',
+    title: 'Footer_links_others_5_',
     link: PathName.ConnectUs,
   },
   {
-    title: 'Инструкция по установки',
+    title: 'Footer_links_others_6_',
     link: PathName.ConnectUs,
   },
 ];
 
 export const linksSocialApp = [
   {
-    title: 'Google Play',
+    title: 'Footer_links_social_app_1_',
     icon: deviceGoogleIcon,
     link: PathName.GooglePlay,
   },
   {
-    title: 'App Store',
+    title: 'Footer_links_social_app_2_',
     icon: deviceAppStoreIcon,
     link: PathName.AppStore,
   },
   {
-    title: 'MacOS-версия',
+    title: 'Footer_links_social_app_3_',
     icon: deviceMacIcon,
     link: PathName.MacOS,
   },
   {
-    title: 'Веб-версия',
+    title: 'Footer_links_social_app_4_',
     icon: deviceWebIcon,
     link: PathName.Web,
   },
   {
-    title: 'Windows-версия',
+    title: 'Footer_links_social_app_5_',
     icon: deviceWindowsIcon,
     link: PathName.Windows,
   },

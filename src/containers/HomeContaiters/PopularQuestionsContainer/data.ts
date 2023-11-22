@@ -1,26 +1,26 @@
 export const data = [
   {
-    question: 'Как оплатить? Можно ли получить закрывающие документы?',
-    answer: '12322',
+    question: 'Popular_question_1_',
+    answer: 'Popular_answer_1_',
   },
   {
-    question: 'Можно устоновить на внутренний контур клиента?',
-    answer: '12333',
+    question: 'Popular_question_2_',
+    answer: 'Popular_answer_2_',
   },
   {
-    question: 'Для каких платформ существует приложение?',
-    answer: '12233',
+    question: 'Popular_question_3_',
+    answer: 'Popular_answer_3_',
   },
   {
-    question: 'Какие требования браузера для работы веб - клиента?',
-    answer: '12443',
+    question: 'Popular_question_4_',
+    answer: 'Popular_answer_4_',
   },
   {
-    question: 'Где храняться данные пользователя в Saas версии?',
-    answer: '123123',
+    question: 'Popular_question_5_',
+    answer: 'Popular_answer_5_',
   },
   {
-    question: 'Каким образом обеспечиваеться безопасность данных?',
-    answer: '12123533',
+    question: 'Popular_question_6_',
+    answer: 'Popular_answer_6_',
   },
 ];

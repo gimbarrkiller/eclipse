@@ -11,7 +11,9 @@ import styles from './styles.module.scss';
 export const BurgerMenu = memo(() => {
   const isTablet = useScreenWidth(ScreenWidth.tablet);
   useEffect(() => {
-    document.body.style.overflow = 'hidden';
+    if (isTablet) {
+      document.body.style.overflow = 'hidden';
+    }
 
     return () => {
       document.body.style.overflow = '';

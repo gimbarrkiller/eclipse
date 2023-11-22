@@ -1,4 +1,6 @@
-export { default as unitedKingdomIcon } from './unitedKingdom.svg';
+export { default as flagUnitedKingdomIcon } from './flagUnitedKingdom.svg';
+export { default as flagGermanyIcon } from './flagGermany.svg';
+
 export { default as burgerIcon } from './burger.svg';
 export { default as closeIcon } from './close.svg';
 export { default as checkIcon } from './check.svg';
@@ -30,6 +32,7 @@ export { default as deviceAppStoreIcon } from './deviceAppStore.svg';
 export { default as deviceWebIcon } from './deviceWeb.svg';
 export { default as deviceMacIcon } from './device-mac.svg';
 export { default as deviceGoogleIcon } from './deviceGoogle.svg';
+export { default as deviceLinuxIcon } from './deviceLinux.svg';
 export { default as cloudIcon } from './cloud.png';
 export { default as lockIcon } from './lock.png';
 

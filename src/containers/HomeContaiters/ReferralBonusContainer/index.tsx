@@ -1,4 +1,5 @@
 import React, { memo, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { programIcon } from 'assets/images';
 
@@ -9,6 +10,7 @@ import { data } from './data';
 import styles from './styles.module.scss';
 
 export const ReferralBonusContainer = memo(() => {
+  const { t } = useTranslation('welcome');
   const cards = useMemo(() => (
     <div className={styles.referral_cards}>
       {data.map(({ percent, lvl }) => (
@@ -20,17 +22,17 @@ export const ReferralBonusContainer = memo(() => {
           <div className={styles.referral_cards_item_subtitle}>
             {lvl}
             {' '}
-            уровень
+            {t('Level_')}
           </div>
         </div>
       ))}
     </div>
-  ), []);
+  ), [t]);
 
   return (
     <div className={styles.referral_container}>
       <div className={styles.referral_title}>
-        Реферальный бонус
+        {t('Referral_title_')}
         <TitleBorderBottom isCenter />
         <Image
           url={programIcon}
@@ -38,8 +40,8 @@ export const ReferralBonusContainer = memo(() => {
         />
       </div>
       <ul className={styles.referral_subtitle}>
-        <li>Иметь годовую лицензию.</li>
-        <li>Быть активным 5 уровнях</li>
+        <li>{t('Referral_li_1_')}</li>
+        <li>{t('Referral_li_2_')}</li>
       </ul>
       {cards}
     </div>

@@ -4,3 +4,6 @@ export enum ScreenWidth {
   tablet = 768,
   mobile = 576,
 }
+
+export const emailApp = 'support@eclipce.io';
+export const telegramApp = '@eclipce_agency';

@@ -1,6 +1,8 @@
 import React, { memo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { contactsIcon, ellipse3Icon, illustrationTgImage } from 'assets/images';
+import { emailApp, telegramApp } from 'appConstants';
 
 import {
   Input,
@@ -12,6 +14,7 @@ import {
 import styles from './styles.module.scss';
 
 export const ContactUsContainer = memo(() => {
+  const { t } = useTranslation('welcome');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [theme, setTheme] = useState('');
@@ -20,7 +23,7 @@ export const ContactUsContainer = memo(() => {
   return (
     <div className={styles.contact_container}>
       <div className={styles.contact_title}>
-        Cвязаться с нами
+        {t('Contact_title_')}
         <TitleBorderBottom />
         <Image
           url={contactsIcon}
@@ -33,28 +36,28 @@ export const ContactUsContainer = memo(() => {
             <Input
               value={name}
               onChangeValue={setName}
-              placeholder="Имя"
+              placeholder={t('Contact_title_')}
             />
             <Input
               value={email}
               onChangeValue={setEmail}
-              placeholder="Электронный адрес"
+              placeholder={t('Contact_form_email_')}
             />
           </div>
           <Input
             value={theme}
             onChangeValue={setTheme}
-            placeholder="Тема сообщения"
+            placeholder={t('Contact_form_theme_')}
           />
           <Input
             value={message}
             onChangeValue={setMessage}
-            placeholder="Сообщение"
+            placeholder={t('Contact_form_message_')}
             isTextarea
             rows={5}
           />
           <Button className={styles.form_btn}>
-            Отправить
+            {t('Contact_form_send_')}
           </Button>
         </form>
         <div className={styles.contact_info}>
@@ -64,15 +67,15 @@ export const ContactUsContainer = memo(() => {
           />
           <div className={styles.contact_info_bottom}>
             <div className={styles.contact_info_title}>
-              Электронная почта:
+              {t('Contact_email_')}
               <div className={styles.contact_info_subtitle}>
-                support@eclipce.io
+                {emailApp}
               </div>
             </div>
             <div className={styles.contact_info_title}>
-              Telegram:
+              {t('Contact_telegram_')}
               <div className={styles.contact_info_subtitle}>
-                @eclipce_agency
+                {telegramApp}
               </div>
             </div>
           </div>

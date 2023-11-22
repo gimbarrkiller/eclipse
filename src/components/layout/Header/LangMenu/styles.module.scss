@@ -1,0 +1,26 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.lang {
+  z-index: 3;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: $white;
+  gap: 16px;
+  box-shadow: $boxShadow;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 12px;
+}
+
+.header_controls_lang {
+  position: relative;
+  border: 1px solid $borderColor;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  height: 48px;
+}

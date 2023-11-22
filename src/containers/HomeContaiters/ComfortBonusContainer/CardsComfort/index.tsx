@@ -1,4 +1,5 @@
 import React, { memo, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { checkIcon } from 'assets/images';
 
@@ -9,6 +10,7 @@ import { cardsData } from './data';
 import styles from './styles.module.scss';
 
 export const CardsComfort = memo(() => {
+  const { t } = useTranslation('welcome');
   const cards = useMemo(() => (
     cardsData.map(({ title, img, list }) => (
       <div className={styles.cards_item}>
@@ -18,7 +20,7 @@ export const CardsComfort = memo(() => {
         />
         <div>
           <div className={styles.cards_item_title}>
-            {title}
+            {t(title)}
           </div>
           <div className={styles.cards_item_ul}>
             {list.map((text) => (
@@ -28,7 +30,7 @@ export const CardsComfort = memo(() => {
                   className={styles.cards_item_li_img}
                 />
                 <div className={styles.cards_item_subtitle}>
-                  {text}
+                  {t(text)}
                 </div>
               </div>
             ))}

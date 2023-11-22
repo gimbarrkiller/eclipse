@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 
 import { comfortIcon, autosImage } from 'assets/images';
@@ -10,35 +11,34 @@ import { GlobalHub } from './GlobalHub';
 
 import styles from './styles.module.scss';
 
-export const ComfortBonusContainer = memo(() => (
-  <div>
-    <div className={styles.comfort_container}>
-      <div className={styles.comfort_title}>
-        Комфорт бонус
+export const ComfortBonusContainer = memo(() => {
+  const { t } = useTranslation('welcome');
+  return (
+    <div>
+      <div className={styles.comfort_container}>
+        <div className={styles.comfort_title}>
+          {t('Comfort_title_')}
+          <Image
+            url={comfortIcon}
+            className={styles.comfort_title_bg}
+          />
+        </div>
         <Image
-          url={comfortIcon}
-          className={styles.comfort_title_bg}
+          url={autosImage}
+          className={styles.comfort_title_subbg}
         />
       </div>
-      <Image
-        url={autosImage}
-        className={styles.comfort_title_subbg}
-      />
-    </div>
-    <div className={styles.comfort_container_second}>
-      <div className={cn(styles.comfort_title, styles.comfort_title_second)}>
-        Eclipce — Global Hub одно приложение, одна экосистема,
-        множество функций супер приложение для командной работы
-        <TitleBorderBottom />
+      <div className={styles.comfort_container_second}>
+        <div className={cn(styles.comfort_title, styles.comfort_title_second)}>
+          {t('Comfort_info_')}
+          <TitleBorderBottom />
+        </div>
+        <div className={cn(styles.comfort_subtitle, styles.comfort_subtitle_second)}>
+          {t('Comfort_subinfo_')}
+        </div>
       </div>
-      <div className={cn(styles.comfort_subtitle, styles.comfort_subtitle_second)}>
-        Укладывайтесь в дедлайны, согласовывайте работы,
-        формируйте проектные команды — когда все на одной платформе,
-        вы можете работать откуда угодно. Настраивайте интеграции Eclipce
-        со всеми привычными сервисами и создавайте собственную рабочую экосистему
-      </div>
+      <CardsComfort />
+      <GlobalHub />
     </div>
-    <CardsComfort />
-    <GlobalHub />
-  </div>
-));
+  );
+});

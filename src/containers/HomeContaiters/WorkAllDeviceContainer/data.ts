@@ -1,49 +1,51 @@
 import {
   deviceAppStoreIcon,
   deviceGoogleIcon,
+  deviceLinuxIcon,
   deviceMacIcon,
+  deviceWebIcon,
   deviceWindowsIcon,
 } from 'assets/images';
 
 export const data = [
   {
     icon: deviceWindowsIcon,
-    name: 'Windows',
+    name: 'Work_all_card_1_',
   },
   {
     icon: deviceMacIcon,
-    name: 'Mac OS',
+    name: 'Work_all_card_2_',
   },
   {
     icon: deviceGoogleIcon,
-    name: 'Google play',
+    name: 'Work_all_card_3_',
   },
   {
     icon: deviceAppStoreIcon,
-    name: 'App store',
+    name: 'Work_all_card_4_',
   },
   {
-    icon: deviceWindowsIcon,
-    name: 'Linux',
+    icon: deviceLinuxIcon,
+    name: 'Work_all_card_5_',
   },
   {
-    icon: deviceWindowsIcon,
-    name: 'iOS',
+    icon: deviceMacIcon,
+    name: 'Work_all_card_6_',
   },
   {
-    icon: deviceWindowsIcon,
-    name: 'Web',
+    icon: deviceWebIcon,
+    name: 'Work_all_card_7_',
   },
 ];
 
 export const soon = [
-  'Чат-боты',
-  'Файловое хранилище',
-  'Почта и календарь',
-  'Корпоративная база знаний',
-  'Интеграция с корпоративными сервисами',
-  'Интеграция с каталогом пользователей',
-  'Контроль действий пользователя',
-  'Федерации',
-  'Исскустевнный интелект',
+  'Soon_card_1_',
+  'Soon_card_2_',
+  'Soon_card_3_',
+  'Soon_card_4_',
+  'Soon_card_5_',
+  'Soon_card_6_',
+  'Soon_card_7_',
+  'Soon_card_8_',
+  'Soon_card_9_',
 ];

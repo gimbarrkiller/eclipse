@@ -2,15 +2,15 @@ import { PathName } from 'appConstants';
 
 export const links = [
   {
-    title: 'Что предлагаем',
+    title: 'What_we_offer_',
     pathName: PathName.WhatWeOffer,
   },
   {
-    title: 'Селлерам',
+    title: 'Agents_',
     pathName: PathName.Sellers,
   },
   {
-    title: 'Связаться с нами',
+    title: 'Connect_with_us_',
     pathName: PathName.ConnectUs,
   },
 ];

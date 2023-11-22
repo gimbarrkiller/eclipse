@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 import { Column } from 'react-table';
+import { useTranslation } from 'react-i18next';
 
 import { agentIcon } from 'assets/images';
 
@@ -11,6 +12,7 @@ import styles from './styles.module.scss';
 import { useColumns } from './columns';
 
 export const AgentStatusContainer = memo(() => {
+  const { t } = useTranslation('welcome');
   const columns = useColumns();
 
   return (
@@ -21,7 +23,7 @@ export const AgentStatusContainer = memo(() => {
       />
       <div className={styles.agent_container_first}>
         <div className={styles.agent_title}>
-          Агент статус
+          {t('Agent_title_')}
           <TitleBorderBottom />
         </div>
         <div className={styles.agent_percent}>
@@ -30,7 +32,7 @@ export const AgentStatusContainer = memo(() => {
               2%
             </div>
             <div className={styles.agent_percent_item_subtitle}>
-              Advanced seller
+              {t('Referral_advanced_seller_')}
             </div>
           </div>
           <div className={styles.agent_percent_border} />
@@ -39,14 +41,12 @@ export const AgentStatusContainer = memo(() => {
               2%
             </div>
             <div className={styles.agent_percent_item_subtitle}>
-              Top seller
+              {t('Referral_top_seller_')}
             </div>
           </div>
         </div>
         <div className={styles.agent_container_first_text}>
-          Выплачивается каждый месяц от мирового Т/О
-          <br />
-          Top seller учавствует в 2 пулах
+          {t('Agent_subtitle_')}
         </div>
       </div>
 
