@@ -1,5 +1,9 @@
 export { default as flagUnitedKingdomIcon } from './flagUnitedKingdom.svg';
 export { default as flagGermanyIcon } from './flagGermany.svg';
+export { default as flagSpainIcon } from './flagSpain.svg';
+export { default as flagFranceIcon } from './flagFrance.svg';
+export { default as flagItalyIcon } from './flagItaly.svg';
+export { default as flagPortugalIcon } from './flagPortugal.svg';
 
 export { default as burgerIcon } from './burger.svg';
 export { default as closeIcon } from './close.svg';
