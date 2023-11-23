@@ -5,16 +5,20 @@ import { LocaleKey } from 'utils';
 
 import { ru } from './ru';
 import { en } from './en';
+import { it } from './it';
+import { hy } from './hy';
 
 const resources = {
-  ru,
   en,
+  it,
+  hy,
+  ru,
 };
 
 i18n
   .use(initReactI18next)
   .init({
-    lng: localStorage.getItem('lng') || LocaleKey.ru,
+    lng: localStorage.getItem('lng') || LocaleKey.en,
     resources,
     interpolation: {
       escapeValue: false,

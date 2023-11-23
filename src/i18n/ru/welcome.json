@@ -2,10 +2,10 @@
   "Title_": "16% бонус\nпрямой продажи",
   "Subtitle_": "Вы получаете за каждого клиента\nот стоимости лицензии",
 
-  "Level_": "уровень",
   "Referral_title_": "Реферальный бонус",
   "Referral_li_1_": "Иметь годовую лицензию.",
   "Referral_li_2_": "Быть активным 5 уровнях",
+  "Level_": "уровень",
 
   "Agent_title_": "Агент статус",
   "Referral_advanced_seller_": "Advanced seller",
@@ -85,7 +85,7 @@
   "Popular_question_6_": "Каким образом обеспечиваеться безопасность данных?",
   "Popular_answer_6_": "1212dc12f23g22",
 
-  "Contact_title_": "Популярные вопросы о нашем продукте:",
+  "Contact_title_": "Связаться с нами",
   "Contact_form_name_": "Имя",
   "Contact_form_email_": "Электронный адрес",
   "Contact_form_theme_": "Тема сообщения",
