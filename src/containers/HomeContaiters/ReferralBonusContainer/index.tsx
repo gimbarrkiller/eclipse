@@ -1,7 +1,9 @@
 import React, { memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Element } from 'react-scroll';
 
 import { programIcon } from 'assets/images';
+import { PathName } from 'appConstants';
 
 import { Image, TitleBorderBottom } from 'components';
 
@@ -14,7 +16,10 @@ export const ReferralBonusContainer = memo(() => {
   const cards = useMemo(() => (
     <div className={styles.referral_cards}>
       {data.map(({ percent, lvl }) => (
-        <div className={styles.referral_cards_item}>
+        <div
+          key={`${lvl}`}
+          className={styles.referral_cards_item}
+        >
           <div className={styles.referral_cards_item_title}>
             {percent}
             %
@@ -30,7 +35,10 @@ export const ReferralBonusContainer = memo(() => {
   ), [t]);
 
   return (
-    <div className={styles.referral_container}>
+    <Element
+      className={styles.referral_container}
+      name={PathName.WhatWeOffer}
+    >
       <div className={styles.referral_title}>
         {t('Referral_title_')}
         <TitleBorderBottom isCenter />
@@ -44,6 +52,6 @@ export const ReferralBonusContainer = memo(() => {
         <li>{t('Referral_li_2_')}</li>
       </ul>
       {cards}
-    </div>
+    </Element>
   );
 });

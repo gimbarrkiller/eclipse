@@ -14,4 +14,5 @@ HTMLButtonElement
   isLoading?: boolean,
   isBgTransparent?: boolean,
   isBigHeight?: boolean,
+  isGrayBg?: boolean,
 }>;

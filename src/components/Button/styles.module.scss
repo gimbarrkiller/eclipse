@@ -1,6 +1,7 @@
 @import 'src/assets/styles/palette';
 
 .button {
+  position: relative;
   height: 48px;
   padding: 13px 32px 14px 32px;
   border-radius: 8px;
@@ -14,7 +15,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background 0.3s;
+  transition: background, box-shadow 0.3s;
+  &:hover {
+    box-shadow: unset;
+  }
 
   .children_while_loading {
     opacity: 0;
@@ -27,16 +31,30 @@
   &.full_width {
     width: 100%;
   }
-
+  .button_content {
+    display: flex;
+  }
 }
 .bg_transparent {
   background: $transparent;
   border: 1px solid $borderColor;
   box-shadow: none;
+  &:hover {
+    border: 1px solid $white;
+  }
 }
 
 .big_height {
   height: 64px;
+}
+
+.gray_color {
+  background:
+    linear-gradient(0deg, $white2, $white2),
+    linear-gradient(0deg, $gradientBorderWhiteColor, $gradientBorderWhiteColor);
+  color: $blueDark;
+  box-shadow: none;
+
 }
 
 .disabled {

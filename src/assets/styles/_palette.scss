@@ -1,35 +1,52 @@
 $gradientTextColor: linear-gradient(265.07deg, #DED9FF 5.23%, #3D8DFF 96.56%);
-$gradientBorderColor: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+$gradientBorderWhiteColor: rgba(255, 255, 255, 0.2);
+$gradientBorderColor: linear-gradient(180deg, $gradientBorderWhiteColor 0%, rgba(255, 255, 255, 0) 100%);
 $gradientOrangeColor: linear-gradient(85.06deg, #AB3232 0.89%, #EA6022 100%);
 $gradientOrangeBlackColor: linear-gradient(270deg, #E85F23 59.33%, rgba(232, 95, 35, 0) 104%);
+
 $gradientBlueGray02Color:
 linear-gradient(180deg, rgba(61, 142, 254, 0.2) 0%, rgba(158, 61, 254, 0.2) 100%),
 $gradientBorderColor;
+
 $gradientBlueGray05Color:
 linear-gradient(180deg, rgba(61, 142, 254, 0.5) 0%, rgba(158, 61, 254, 0.5) 100%),
 $gradientBorderColor;
 
+$gradientBlueGray00Color:
+  linear-gradient(180deg, rgba(61, 142, 254, 0.2) 0%, rgba(158, 61, 254, 0.2) 100%),
+  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+
 $boxShadow: 0 14px 24px 0 #0000002B;
-$bgColor: #642BB0;
+$boxShadowMain: 0 24px 32px 0 #0818590A;
 $textColor: #FFFFFF;
 $textVioletColor: #9F72DC;
 $orangeHover: #AB3232;
 $borderColor: #FFFFFF33;
 $transparent: transparent;
+$blackTransparent: rgba(1, 14, 23, 0.7);
 
 
 $white: #FFFFFF;
-$white2: #F1F4F7;
 $white1: #E3E9F0;
+$white2: #f1f4f7;
+
 $violet: #642bb0;
+$violetLight: #8A68E1;
+$violetLight1: #5B4BB7;
+
 $black: #03050A;
 
 $gray: #DFE0E1;
 $gray1: rgba(36, 23, 69, 0.1);
+$grey2: rgba(5, 22, 85, 0.1);
 $grey5: #5C6975;
 
 $blueLight: #6673bd;
+$blueDark: #051655;
 
 $orangeDark: #E85A2133;
 $orangeLight: #F58F62;
+$orange: #F98F63;
 $red: #AB3232;
+
+$green: #2ECC89;

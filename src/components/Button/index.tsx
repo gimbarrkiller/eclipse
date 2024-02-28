@@ -17,6 +17,7 @@ export const Button = memo((
     isLoading,
     isBgTransparent,
     isBigHeight,
+    isGrayBg,
   }: ButtonProps,
 ) => (
   <button
@@ -29,12 +30,14 @@ export const Button = memo((
         [styles.disabled]: disabled,
         [styles.bg_transparent]: isBgTransparent,
         [styles.big_height]: isBigHeight,
+        [styles.gray_color]: isGrayBg,
       },
     )}
     onClick={onClick}
     disabled={disabled || isLoading}
   >
     <div className={cx(
+      styles.button_content,
       { [styles.children_while_loading]: isLoading },
     )}
     >

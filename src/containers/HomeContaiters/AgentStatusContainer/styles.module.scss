@@ -5,7 +5,9 @@
   position: relative;
   display: flex;
   gap: 40px;
-  margin-bottom: 160px;
+  padding: 0 24px;
+  max-width: 1248px;
+  margin: 0 auto 160px;
   @include laptop {
     margin-bottom: 120px;
   }
@@ -13,6 +15,7 @@
     flex-direction: column;
     gap: 32px;
     margin-bottom: 40px;
+    padding: 0 12px;
   }
 }
 
@@ -39,17 +42,18 @@
 
 .agent_title_bg {
   position: absolute;
-  width: 100%;
   z-index: -1;
   max-height: 172px;
+  width: calc(100% - 24px);
   @include tablet {
     height: 70px;
+    width: calc(100% - 12px);
   }
 }
 
 .agent_percent {
   background: $gradientBlueGray05Color;
-  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%);
+  border-image-source: linear-gradient(180deg, $gradientBorderWhiteColor 0%);
   box-shadow: $boxShadow;
   border-radius: 20px;
   display: flex;
@@ -105,5 +109,8 @@
   width: 60%;
   @include tablet {
     width: 100%;
+  }
+  tr td:last-child {
+    text-wrap: nowrap;
   }
 }

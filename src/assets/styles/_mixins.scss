@@ -1,14 +1,9 @@
 @import './palette';
 
 // Media request mixins MobileFirst
-@mixin mobile {
-  @media screen and (max-width: 576px) {
-    @content;
-  }
-}
 
-@mixin tablet {
-  @media screen and (max-width: 768px) {
+@mixin desktop {
+  @media screen and (max-width: 1230px) {
     @content;
   }
 }
@@ -19,7 +14,19 @@
   }
 }
 
-@mixin scrollbar {
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin scrollbar($bg: $gray, $bgThumb: $borderColor, $bgActive: $grey5) {
   &::-webkit-scrollbar {
     width: 6px;
     height: 0;
@@ -27,21 +34,22 @@
   }
 
   &::-webkit-scrollbar-track {
-    background-color: $bgColor;
+    background-color: $bg;
     border-radius: 4px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $borderColor;
+    background-color: $bgThumb;
     border-radius: 4px;
 
     &:hover {
-      background-color: $grey5;
+      background-color: $bgActive;
     }
   }
 }
 
 @mixin titleGradient {
+  white-space: pre-wrap;
   background: $gradientTextColor;
   -webkit-background-clip: text;
   -webkit-text-fill-color: $transparent;

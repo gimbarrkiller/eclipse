@@ -13,7 +13,6 @@
   padding: 0 24px;
   backdrop-filter: blur(12px);
   @include tablet {
-    height: calc(100vh - 64px);
     background: $violet;
     flex-direction: column;
     justify-content: space-between;

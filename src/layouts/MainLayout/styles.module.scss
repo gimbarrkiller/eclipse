@@ -1,11 +1,51 @@
 @import 'src/assets/styles/palette';
 @import 'src/assets/styles/mixins';
 
+.layout {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 288px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 'sidebar main';
+  @include laptop {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'header' 'main';
+    overflow: initial;
+  }
+}
+
+.layout_top {
+  grid-area: layout_top;
+  position: absolute;
+  top: 0;
+}
+
 .layout_wrapper {
-  padding: 0 24px;
-  max-width: 1248px;
-  margin: 0 auto;
+  position: relative;
+  @include scrollbar($transparent);
+  overflow-y: scroll;
+  grid-area: main;
+  padding: 40px 40px 40px 0;
+  width: 100%;
+  @include laptop {
+    overflow-y: auto;
+    padding: 0;
+  }
+}
+
+.layout_wrapper_container {
+  max-width: 1112px;
+  background-color: $white2;
+  padding: 48px 64px;
+  border-radius: 40px;
+  min-height: 100%;
+  @include laptop {
+    border-radius: 0;
+    padding: 40px 24px;
+  }
   @include tablet {
-    padding: 0 12px;
+    padding: 32px 12px;
   }
 }

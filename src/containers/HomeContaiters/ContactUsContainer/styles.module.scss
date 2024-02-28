@@ -3,9 +3,12 @@
 
 .contact_container {
   position: relative;
-  margin-bottom: 120px;
+  padding: 0 24px;
+  max-width: 1248px;
+  margin: 0 auto 120px;
   @include tablet {
     margin-bottom: 64px;
+    padding: 0 12px;
   }
 }
 
@@ -135,7 +138,7 @@
 
 .contact_info_bg_right {
   position: absolute;
-  right: -24px;
+  right: 0;
   top: 50%;
   z-index: -1;
   @include laptop {

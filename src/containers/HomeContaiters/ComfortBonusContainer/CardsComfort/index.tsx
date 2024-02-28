@@ -13,7 +13,10 @@ export const CardsComfort = memo(() => {
   const { t } = useTranslation('welcome');
   const cards = useMemo(() => (
     cardsData.map(({ title, img, list }) => (
-      <div className={styles.cards_item}>
+      <div
+        key={title}
+        className={styles.cards_item}
+      >
         <Image
           url={img}
           className={styles.cards_item_img}
@@ -24,7 +27,10 @@ export const CardsComfort = memo(() => {
           </div>
           <div className={styles.cards_item_ul}>
             {list.map((text) => (
-              <div className={styles.cards_item_li}>
+              <div
+                key={text}
+                className={styles.cards_item_li}
+              >
                 <Image
                   url={checkIcon}
                   className={styles.cards_item_li_img}
@@ -38,7 +44,7 @@ export const CardsComfort = memo(() => {
         </div>
       </div>
     ))
-  ), []);
+  ), [t]);
 
   return (
     <div className={styles.cards}>

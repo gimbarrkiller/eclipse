@@ -4,38 +4,29 @@
 .table {
   width: 100%;
   border-spacing: 0 4px;
-  background: $gradientBlueGray02Color;
   border: 1px solid;
-  border-image-source: $gradientBorderColor;
-  box-shadow: $boxShadow;
   border-radius: 20px;
-  padding: 0 4px;
-  background-color: #642bb0;
+  background: $white;
+  border: $transparent;
   thead {
-    background:
-      linear-gradient(266.09deg, rgba(93, 156, 255, 0.2) 1.15%, rgba(93, 156, 255, 0) 98.69%),
-      linear-gradient(180deg, #3D8EFE 0%, rgba(61, 142, 254, 0) 100%);
-    border-image-source: linear-gradient(180deg, #3D8EFE 0%, rgba(61, 142, 254, 0) 100%);
     position: relative;
     padding: 2px;
     border-radius: 16px;
+    background: $white2;
+
     th {
+      height: 64px;
+      color: $blueLight;
       padding: 8px;
-      color: $white;
-      height: 80px;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 21px;
       text-align: center;
       &:first-child {
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
         text-align: left;
       }
       &:last-child {
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-        text-align: right;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
       }
       @include mobile {
         height: 54px;
@@ -46,40 +37,53 @@
   }
 
   td {
-    padding: 8px;
-    height: 84px;
-    color: $white;
-    border: 1px solid;
-    border-image-source: $gradientBorderColor;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 35px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
     text-align: center;
+    padding: 8px;
+    height: 90px;
+    color: $blueDark;
+    border-bottom: 1px solid $white1;
+    &.td_gray {
+      border-bottom: none;
+    }
+    &.td_black {
+      border-bottom: 1px solid $blueDark;
+      padding: 4px 40px;
+    }
+    &.td_no_data {
+      height: 600px;
+      .td_no_data_div {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: center;
+        color: $blueLight;
+        @include tablet {
+          font-size: 14px;
+          gap: 16px;
+        }
+      }
+    }
 
     &:first-child {
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
       text-align: left;
     }
     &:last-child {
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
-      text-align: right;
+      text-align: center;
+      text-align: -webkit-center;
     }
     @include mobile {
       height: 58px;
       font-size: 14px;
       line-height: 21px;
     }
-
-    span {
-      display: block;
-
-      @include tablet {
-        font-size: 18px;
-      }
-    }
-
     button {
       display: flex;
       align-items: center;
@@ -96,7 +100,67 @@
   }
 
   tr {
-     text-align: left;
+    text-align: left;
+    &:last-child td {
+      border-bottom: none;
+    }
   }
 
+}
+
+.table_home {
+  box-shadow: $boxShadow;
+  border-image-source: $gradientBorderColor;
+  background: $gradientBlueGray02Color;
+  background-color: $violet;
+  padding: 0 4px;
+  thead {
+    box-shadow: $boxShadow;
+    background: $gradientBlueGray00Color;
+
+    th {
+      color: $white;
+      height: 80px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      &:first-child {
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        text-align: left;
+      }
+      &:last-child {
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        text-align: right;
+      }
+    }
+  }
+  td {
+    height: 84px;
+    border: 1px solid;
+    color: $white;
+    border-image-source: $gradientBorderColor;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      text-align: left;
+      font-size: 18px;
+    }
+    &:last-child {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      text-align: right;
+    }
+    @include mobile {
+      height: 58px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
 }

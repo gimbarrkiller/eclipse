@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 
 import {
   MainContainer,
@@ -11,15 +11,29 @@ import {
   ContactUsContainer,
 } from 'containers';
 
-export const HomePage: FC = () => (
-  <>
-    <MainContainer />
-    <ReferralBonusContainer />
-    <AgentStatusContainer />
-    <ComfortBonusContainer />
-    <VideoCallContainer />
-    <WorkAllDeviceContainer />
-    <PopularQuestionsContainer />
-    <ContactUsContainer />
-  </>
-);
+interface IHomePage {
+  goingFooter?: boolean;
+}
+
+export const HomePage: FC<IHomePage> = ({ goingFooter }) => {
+  useEffect(() => {
+    if (goingFooter) {
+      setTimeout(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+      }, 500);
+    }
+  }, [goingFooter]);
+
+  return (
+    <>
+      <MainContainer />
+      <ReferralBonusContainer />
+      <AgentStatusContainer />
+      <ComfortBonusContainer />
+      <VideoCallContainer />
+      <WorkAllDeviceContainer />
+      <PopularQuestionsContainer />
+      <ContactUsContainer />
+    </>
+  );
+};

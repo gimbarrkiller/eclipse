@@ -1,5 +1,16 @@
-import React, { ChangeEvent, memo, useCallback } from 'react';
-import cx from 'classnames';
+import React, {
+  ChangeEvent,
+  memo,
+  ReactNode,
+  useCallback,
+  useState,
+} from 'react';
+import cn from 'classnames';
+
+import { viewIcon } from 'assets/images';
+
+import { ButtonIcon } from '../ButtonIcon';
+import { Image } from '../Image';
 
 import styles from './styles.module.scss';
 
@@ -16,6 +27,11 @@ type InputProps = {
   isTextarea?: boolean;
   rows?: number;
   error?: string | undefined;
+  isPassword?: boolean;
+  label?: string;
+  suffix?: ReactNode;
+  icon?: string;
+  type?: string;
 };
 
 export const Input = memo<InputProps>(({
@@ -27,11 +43,23 @@ export const Input = memo<InputProps>(({
   disabled = false,
   onChangeValue,
   placeholder = '',
+  isPassword,
   isNumberOnly,
   isTextarea,
   rows = 1,
   error,
+  label,
+  type,
+  suffix,
+  icon,
 }) => {
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+  const onPasswordToggleClick = useCallback(() => {
+    setIsPasswordVisible(!isPasswordVisible);
+  }, [isPasswordVisible]);
+
+  const inputType = (!isPassword || isPasswordVisible) ? type || 'text' : 'password';
   const formatInputToNumber = (input: string) => {
     let index = 0;
     let inputNext = input
@@ -62,26 +90,58 @@ export const Input = memo<InputProps>(({
 
   return (
     <div
-      className={cx(styles.input__container, classNameContainer)}
+      className={cn(styles.input__container, classNameContainer)}
     >
       <div
-        className={cx(styles.input__box, classNameInputBox, {
+        className={cn(styles.input__box, classNameInputBox, {
           [styles.textarea__box]: isTextarea,
           [styles.input__box_error]: error,
         })}
       >
+        {label && (
+          <div
+            className={cn(styles.input_label, {
+              [styles.input_label_focus]: !!value,
+            })}
+          >
+            {label}
+          </div>
+        )}
+        {icon && (
+          <Image
+            className={styles.input__box_icon}
+            url={icon}
+          />
+        )}
         <Comp
           pattern={pattern}
           value={value}
-          className={classNameInput}
+          className={cn(classNameInput, {
+            [styles.input_and_label]: label,
+            [styles.input_and_icon]: icon,
+          })}
           disabled={disabled}
           defaultValue={defaultValue}
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           onChange={handleChange}
+          type={inputType}
           placeholder={placeholder}
           row={rows}
         />
+
+        {suffix && (
+          <div className={styles.input__suffix}>
+            {suffix}
+          </div>
+        )}
+        {isPassword && (
+          <ButtonIcon
+            imageURL={viewIcon}
+            className={cn(styles.input_icon)}
+            onClick={onPasswordToggleClick}
+          />
+        )}
       </div>
       {error && (
         <span className={styles.input__error}>

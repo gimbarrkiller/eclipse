@@ -1,8 +1,25 @@
 import { all } from 'redux-saga/effects';
-import { FullListEffects } from './fullList/sagas';
+
+import { ConnectUsEffects } from './connectUs/sagas';
+import { ProfileEffects } from './profile/sagas';
+import { PartnerEffects } from './partner/sagas';
+import { TransactionsEffects } from './transactions/sagas';
+import { TicketEffects } from './ticket/sagas';
+import { StatusEffects } from './status/sagas';
+import { PoolEffects } from './pool/sagas';
+import { AuthEffects } from './auth/sagas';
+import { NewsEffects } from './news/sagas';
 
 export default function* rootSaga() {
   yield all([
-    ...FullListEffects,
+    ...ConnectUsEffects,
+    ...ProfileEffects,
+    ...PartnerEffects,
+    ...TransactionsEffects,
+    ...TicketEffects,
+    ...StatusEffects,
+    ...PoolEffects,
+    ...AuthEffects,
+    ...NewsEffects,
   ]);
 }

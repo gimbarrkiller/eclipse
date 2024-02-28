@@ -14,7 +14,7 @@ import styles from './styles.module.scss';
 export const ComfortBonusContainer = memo(() => {
   const { t } = useTranslation('welcome');
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.comfort_container}>
         <div className={styles.comfort_title}>
           {t('Comfort_title_')}

@@ -27,5 +27,5 @@ export const LinksOthers:FC<ILinksOthers> = memo(({
         </NavLink>
       ))}
     </div>
-  )
+  );
 });

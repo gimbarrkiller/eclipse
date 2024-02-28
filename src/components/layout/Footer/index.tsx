@@ -17,6 +17,8 @@ import {
 
 import styles from './styles.module.scss';
 
+const nowYear = new Date().getFullYear();
+
 export const Footer = memo(() => {
   const { t } = useTranslation('footer');
   return (
@@ -47,7 +49,7 @@ export const Footer = memo(() => {
 
         <div className={styles.footer_border} />
         <div className={styles.footer_copyright}>
-          {t('Copyright_')}
+          {t('Copyright_', { nowYear })}
         </div>
         <LinksSocialFooter
           links={linksSocialApp}

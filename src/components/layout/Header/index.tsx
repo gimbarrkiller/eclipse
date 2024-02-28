@@ -4,9 +4,10 @@ import React, {
   useMemo,
   useState,
 } from 'react';
+import { Link } from 'react-router-dom';
 import cn from 'classnames';
 
-import { ScreenWidth } from 'appConstants';
+import { PathName, ScreenWidth } from 'appConstants';
 import {
   logoImage,
   burgerIcon,
@@ -14,13 +15,12 @@ import {
 } from 'assets/images';
 import { useScreenWidth } from 'hooks';
 
-import { Image, ButtonIcon } from 'components';
+import { Image, ButtonIcon, LangMenu } from 'components';
 
 import { LinksHead } from './LinksHead';
 
 import { BurgerMenu } from './BurgerMenu';
 import { SignInUsButtons } from './SignInUsButtons';
-import { LangMenu } from './LangMenu';
 
 import styles from './styles.module.scss';
 
@@ -30,6 +30,10 @@ export const Header = memo(() => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
+
+  const onBurgerChange = useCallback(() => {
+    setIsOpen(!isOpen);
+  }, [isOpen]);
 
   const onScrollChange = useCallback(() => {
     setIsScrolling(window.scrollY >= 10);
@@ -41,10 +45,6 @@ export const Header = memo(() => {
       window.removeEventListener('scroll', onScrollChange);
     };
   }, [onScrollChange]);
-
-  const onBurgerChange = useCallback(() => {
-    setIsOpen(!isOpen);
-  }, [isOpen]);
 
   const burgerControl = useMemo(() => (
     <ButtonIcon
@@ -68,8 +68,10 @@ export const Header = memo(() => {
         })}
       >
         <div className={styles.header_content}>
-          <Image url={logoImage} />
-          {!isLaptop && <LinksHead />}
+          <Link to={PathName.Home}>
+            <Image url={logoImage} />
+          </Link>
+          {!isLaptop && <LinksHead onBurgerChange={onBurgerChange} />}
           {isLaptop && !isTablet && <LangMenu />}
         </div>
         <div className={styles.header_controls}>
@@ -78,7 +80,7 @@ export const Header = memo(() => {
           {!isTablet && <SignInUsButtons />}
         </div>
       </div>
-      {isLaptop && isOpen && <BurgerMenu />}
+      {isLaptop && isOpen && <BurgerMenu onBurgerChange={onBurgerChange} />}
     </div>
   );
 });

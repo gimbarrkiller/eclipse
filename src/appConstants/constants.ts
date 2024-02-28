@@ -5,5 +5,5 @@ export enum ScreenWidth {
   mobile = 576,
 }
 
-export const emailApp = 'support@eclipce.io';
-export const telegramApp = '@eclipce_agency';
+export const emailApp = 'agent@eclipse.club';
+export const itemsOnPageQuantity = 10;

@@ -2,12 +2,15 @@
 @import 'src/assets/styles/mixins';
 
 .work_container {
-  margin-bottom: 160px;
+  padding: 0 24px;
+  max-width: 1248px;
+  margin: 0 auto 160px;
   @include laptop {
     margin-bottom: 120px;
   }
   @include tablet {
     margin-bottom: 40px;
+    padding: 0 12px;
   }
 }
 
@@ -37,7 +40,7 @@
 }
 
 .work_cards_item {
-  padding: 54px 62px;
+  padding: 54px 24px;
   width: 100%;
   display: inline-block;
   border-radius: 20px;
@@ -61,6 +64,7 @@
   font-weight: 500;
   line-height: 22px;
   text-align: center;
+  min-width: 100px;
 }
 
 .work_container_end {

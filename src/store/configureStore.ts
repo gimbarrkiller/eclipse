@@ -5,10 +5,58 @@ import {
   combineReducers,
 } from 'redux';
 import createSagaMiddleware from 'redux-saga';
+import storage from 'redux-persist/es/storage';
+import { persistStore, persistReducer } from 'redux-persist';
+
 import reducer from './rootReducer';
 import rootSaga from './rootSaga';
+import { AuthState } from './auth/types';
+import { ProfileState } from './profile/types';
+import { TransactionsState } from './transactions/types';
 
 const sagaMiddleware = createSagaMiddleware();
+
+const authPersistConfig = {
+  key: 'auth',
+  storage,
+  whitelist: [
+    'accessToken',
+  ] as Array<keyof AuthState>,
+};
+
+const transactionsPersistConfig = {
+  key: 'transactions',
+  storage,
+  whitelist: [
+    'transactionsList',
+    'rate',
+  ] as Array<keyof TransactionsState>,
+};
+
+const profilePersistConfig = {
+  key: 'profile',
+  storage,
+  whitelist: [
+    'avatar',
+    'lastName',
+    'firstName',
+    'fatherName',
+    'email',
+    'phone',
+    'telegram',
+    'balance',
+    'id',
+    'referralCode',
+    'rank',
+  ] as Array<keyof ProfileState>,
+};
+
+const reducers = {
+  ...reducer,
+  auth: persistReducer(authPersistConfig, reducer.auth),
+  profile: persistReducer(profilePersistConfig, reducer.profile),
+  transactions: persistReducer(transactionsPersistConfig, reducer.transactions),
+};
 
 declare global {
   interface Window {
@@ -23,7 +71,7 @@ export default (initialState: { [key: string]: never } = {}) => {
     || compose;
 
   const store = createStore(
-    combineReducers(reducer),
+    combineReducers(reducers),
     initialState,
     composeEnhancers(
       applyMiddleware(
@@ -33,6 +81,7 @@ export default (initialState: { [key: string]: never } = {}) => {
   );
 
   sagaMiddleware.run(rootSaga);
+  const persistor = persistStore(store);
 
-  return { store };
+  return { store, persistor };
 };

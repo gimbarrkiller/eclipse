@@ -1,5 +1,4 @@
 import React, { FC, memo } from 'react';
-import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 
@@ -24,9 +23,11 @@ export const LinksSocialFooter:FC<ILinksSocialFooter> = memo(({
   return (
     <div className={cn(styles.footer_social, classNameContainer)}>
       {links.map(({ icon, link, title }) => (
-        <NavLink
-          key={link}
-          to={link}
+        <a
+          key={title}
+          href={link}
+          target="_blank"
+          rel="noreferrer"
           className={styles.footer_social_link}
         >
           <Image
@@ -38,7 +39,7 @@ export const LinksSocialFooter:FC<ILinksSocialFooter> = memo(({
               {t(title)}
             </div>
           )}
-        </NavLink>
+        </a>
       ))}
     </div>
   );

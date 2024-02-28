@@ -7,12 +7,20 @@ import { ru } from './ru';
 import { en } from './en';
 import { it } from './it';
 import { hy } from './hy';
+import { pt } from './pt';
+import { es } from './es';
+import { de } from './de';
+import { fr } from './fr';
 
 const resources = {
   en,
   it,
   hy,
   ru,
+  pt,
+  es,
+  de,
+  fr,
 };
 
 i18n

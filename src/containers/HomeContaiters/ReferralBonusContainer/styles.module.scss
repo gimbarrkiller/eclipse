@@ -2,9 +2,12 @@
 @import 'src/assets/styles/mixins';
 
 .referral_container {
-  margin-bottom: 134px;
+  padding: 0 24px;
+  max-width: 1248px;
+  margin: 0 auto 134px;
   @include tablet {
     margin-bottom: 64px;
+    padding: 0 12px;
   }
 }
 
@@ -23,8 +26,11 @@
 
 .referral_title_bg {
   position: absolute;
-  width: 100%;
   z-index: -1;
+  width: calc(100% - 24px);
+  @include tablet {
+    width: calc(100% - 12px);
+  }
 }
 
 .referral_subtitle {
@@ -52,7 +58,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  @include scrollbar
+  @include scrollbar($white, $white);
 }
 
 .referral_cards_item {
@@ -82,4 +88,5 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
+  text-align: center;
 }

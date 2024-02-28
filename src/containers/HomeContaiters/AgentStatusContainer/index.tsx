@@ -1,22 +1,29 @@
 import React, { memo } from 'react';
 import { Column } from 'react-table';
 import { useTranslation } from 'react-i18next';
+import { Element } from 'react-scroll';
 
 import { agentIcon } from 'assets/images';
+import { PathName } from 'appConstants';
 
 import { Image, Table, TitleBorderBottom } from 'components';
 
-import { data } from './data';
+import { useData } from './data';
+import { useColumns } from './columns';
 
 import styles from './styles.module.scss';
-import { useColumns } from './columns';
 
 export const AgentStatusContainer = memo(() => {
   const { t } = useTranslation('welcome');
+  const trans = useTranslation('main').t;
   const columns = useColumns();
+  const data = useData(trans);
 
   return (
-    <div className={styles.agent_container}>
+    <Element
+      className={styles.agent_container}
+      name={PathName.Sellers}
+    >
       <Image
         url={agentIcon}
         className={styles.agent_title_bg}
@@ -54,9 +61,9 @@ export const AgentStatusContainer = memo(() => {
         <Table
           columns={columns as Column<object>[]}
           data={data}
-          className={styles.statistics_table}
+          isHome
         />
       </div>
-    </div>
+    </Element>
   );
 });

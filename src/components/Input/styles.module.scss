@@ -24,6 +24,16 @@
   }
 }
 
+.input__box_icon {
+  position: absolute;
+  left: 20px;
+}
+
+.input_icon {
+  position: absolute;
+  right: 5px;
+}
+
 .textarea__box {
   height: auto;
 }
@@ -45,11 +55,33 @@ input, textarea {
   width: 100%;
   height: 100%;
   padding: 22px 20px;
+  font-weight: 600;
   &:active, &:hover, &:focus {
-    border: 1px solid $gray;
+    border: 1px solid $white1;
     outline: 0;
     outline-offset: 0;
   }
+}
+
+.input__suffix {
+  position: absolute;
+  right: 10px;
+}
+
+.input_and_label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: $blueDark;
+  padding: 22px 20px 12px;
+}
+
+.input_and_icon {
+  padding-left: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: $blueDark;
 }
 
 .input__error {
@@ -58,4 +90,21 @@ input, textarea {
   margin-top: 2px;
   width: 335px;
   color: $red;
+}
+
+.input_label {
+  pointer-events: none;
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: $blueLight;
+  transition: font-size 0.2s ease, top 0.2s ease;
+}
+
+.input_label_focus {
+  top: 10px;
+  font-size: 12px;
 }

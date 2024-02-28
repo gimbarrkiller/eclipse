@@ -1,5 +1,6 @@
 .eslintrc.js
 node_modules
+generators
 build
-craco.config.js
 .eslintcache
+package-lock.json

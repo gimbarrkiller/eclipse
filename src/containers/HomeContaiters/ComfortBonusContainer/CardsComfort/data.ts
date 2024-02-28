@@ -17,7 +17,7 @@ export const cardsData = [
   },
   {
     img: illustrationChatImage,
-    title: 'Чат',
+    title: 'Comfort_card_chat_',
     list: [
       'Comfort_card_chat_li_1_',
       'Comfort_card_chat_li_2_',
@@ -35,7 +35,7 @@ export const cardsData = [
   },
   {
     img: illustrationPuzzleImage,
-    title: 'Интеграция с внешними сервисами',
+    title: 'Comfort_card_integration_',
     list: [
       'Comfort_card_integration_li_1_',
       'Comfort_card_integration_li_2_',

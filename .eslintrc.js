@@ -29,6 +29,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     'func-call-spacing': 2, // instead of no-spaced-func
     'import/extensions': 0,
+    'import/export': 0,
     'react/prop-types': 0,
     'react/require-default-props': 0,
     'no-spaced-func': 0, // deprecated
