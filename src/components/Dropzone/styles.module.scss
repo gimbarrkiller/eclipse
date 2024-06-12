@@ -1,0 +1,59 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.dropzone_container {
+  .dropzone_avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    @include tablet {
+      flex-direction: column;
+    }
+    &_ticket {
+      padding: 4px 4px 4px 20px;
+      height: 64px;
+      border: 1px solid $white1;
+      background:
+        linear-gradient(0deg, $white2, $white2),
+        linear-gradient(0deg, $white1, $white1);
+      border-radius: 12px;
+      @include tablet {
+        flex-direction: row;
+      }
+    }
+  }
+  .dropzone_btn {
+    padding: 16px;
+    height: auto;
+    width: fit-content;
+  }
+}
+
+.dropzone_avatar_img_text {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.dropzone_text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: $blueLight;
+  white-space: pre-wrap;
+  @include tablet {
+    white-space: initial;
+  }
+  &_ticket {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+}
+
+.dropzone_avatar_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}

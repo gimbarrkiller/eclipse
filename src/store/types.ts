@@ -7,6 +7,7 @@ import { StatusState } from 'store/status/types';
 import { PoolState } from 'store/pool/types';
 import { AuthState } from 'store/auth/types';
 import { NewsState } from 'store/news/types';
+import { DocumentsState } from 'store/documents/types';
 
 export type ReduxState = {
   connectUs: ConnectUsState,
@@ -18,4 +19,5 @@ export type ReduxState = {
   pool: PoolState,
   auth: AuthState,
   news: NewsState,
+  documents: DocumentsState,
 };

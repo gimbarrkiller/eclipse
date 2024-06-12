@@ -1,0 +1,19 @@
+{
+  "Avatar_": "Ավատար",
+  "Avatar_info_": "Յուրաքանչյուր ֆայլի չափը չպետք է գերազանցի 2 ՄԲ-ը: Թույլատրելի ֆորմատներ՝ png, jpeg, jpg, gif, pdf:",
+  "Select_file_": "Ընտրել ֆայլ",
+  "Personal_info_": "Անձնական տվյալներ",
+  "Last_name_": "Ազգանուն",
+  "First_name_": "Անուն",
+  "Father_name_": "Հայրանուն",
+  "Email_": "E-mail",
+  "Phone_number_": "Հեռախոսահամար",
+  "Telegram_login_": "Telegram-ի մուտքանուն",
+  "Password_": "Գաղտնաբառ",
+  "Old_password_": "Հին գաղտնաբառ",
+  "New_password_": "Նոր գաղտնաբառ",
+  "Repeat_new_password_": "Կրկնել նոր գաղտնաբառը",
+  "Save_changes_": "Պահպանել փոփոխությունները",
+  "Saved_change_": "Данные успешно сохранены!"
+}
+

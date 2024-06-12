@@ -1,0 +1,33 @@
+{
+  "Statuses_": "Status",
+  "Status_conditions_": "Bedingungen des Status",
+  "Have_purchased_annual_license_": "Eine gekaufte Jahreslizenz haben",
+  "Personal_sales_": "Persönliche Lizenzverkäufe in der Menge BIS {{amount}} Stück",
+  "Team_license_sales_": "Team-Lizenzverkäufe in der Menge BIS {{amount}} Stück",
+  "Personal_sales2_": "Persönliche Lizenzverkäufe in der Menge von {{amount}} Stück",
+  "Team_license_sales2_": "Team-Lizenzverkäufe in der Menge von {{amount}} Stück",
+  "Number_active_personal_licenses_": "Anzahl der aktiven Lizenzen (persönlich)",
+  "Number_vertical_branches_": "Anzahl der vertikalen Zweige",
+  "Number_team_license_sales_": "Anzahl der vom Team verkauften Lizenzen (aktiv)",
+  "Number_license_sales_top_team_": "Anzahl der von den besten Team verkauften Lizenzen",
+  "Reward_": "Belohnung",
+  "Referral_": "Empfehler",
+  "Active_status_": "Status der Aktivität",
+  "Number_license_sales_": "Anzahl der verkauften Lizenzen (aktiv)",
+  "Number_referrals_active_": "Anzahl der Empfehlungen (aktiv)",
+  "Sales_amount_": "Verkaufsbetrag",
+  "Active_": "Aktiv",
+
+  "Showing_out_of_profiles_": "Zeigt {{count}} von {{totalCount}} Profilen",
+  "Referral_list_is_empty_": "Die Liste der Empfehlungen ist leer...",
+  "Updated_once_every_": "Wird alle 3 Monate aktualisiert. Nächstes Aktualisierungsdatum: {{time}}",
+
+  "Pools_": "Pools",
+  "Number_participants_current_pool_": "Anzahl der Teilnehmer im aktuellen Pool",
+  "Number_active_referral_licenses_": "Anzahl der aktiven Lizenzen von Verweisen",
+  "Number_branches_": "Anzahl der Zweige",
+  "Balance_within_pool_": "Saldo innerhalb des Pools",
+  "Pool_participant_": "Poolmitglieder",
+  "Number_referrals_": "Anzahl der Empfehlungen",
+  "Total_licenses_sold_personally_referrals_": "Gesamtzahl der persönlich und durch Empfehlungen verkauften Lizenzen"
+}

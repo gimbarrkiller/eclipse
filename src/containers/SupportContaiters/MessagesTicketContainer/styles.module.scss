@@ -1,0 +1,111 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.messages_container {
+  width: calc(100% - 300px);
+  max-height: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: auto;
+  @include laptop {
+    width: 100%;
+  }
+}
+
+.messages {
+  max-height: 550px;
+  display: flex;
+  flex-direction: column;
+  @include scrollbar($white);
+  overflow-x: scroll;
+  gap: 24px;
+  @include tablet {
+    gap: 16px;
+  }
+  .message_info {
+    display: flex;
+    gap: 16px;
+    width: 350px;
+    @include tablet {
+      gap: 12px;
+      width: 100%;
+    }
+    &_my {
+      margin-left: auto;
+      flex-direction: row-reverse;
+      @include tablet {
+        margin-left: 0;
+      }
+    }
+    .message_avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 12px;
+    }
+    .message_container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 12px;
+      background-color: $white2;
+      border-radius: 0 16px 16px 16px;
+      &_my {
+        border-radius: 16px 0 16px 16px;
+        background-color: $blueDark;
+
+      }
+      .message_name_time {
+        display: flex;
+        justify-content: space-between;
+        gap: 4px;
+        .message_name {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+          color: $blueLight;
+        }
+        .message_time {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          text-align: right;
+          color: $blueLight;
+        }
+      }
+      .message_text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        &_my {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.message_suffix {
+  display: flex;
+  gap: 12px;
+  .message_suffix_btn {
+    padding: 16px;
+    height: 56px;
+  }
+
+  .dropzone_ticket {
+    padding: 0;
+    gap: 0;
+    > div {
+      display: none;
+    }
+    button {
+      padding: 0;
+      background:
+        linear-gradient(0deg, $white2, $white2),
+        linear-gradient(0deg, $white1, $white1);
+      border: 1px solid $borderColor;
+      box-shadow: none;
+    }
+  }
+}

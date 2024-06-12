@@ -1,0 +1,118 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.news_container {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.no_data {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  .no_data_div {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: $blueLight;
+    @include tablet {
+      font-size: 14px;
+      gap: 16px;
+    }
+  }
+}
+.news_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  @include tablet {
+    gap: 12px;
+    flex-direction: column;
+  }
+}
+
+.news_card {
+  max-width: calc(33% - 24px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include desktop {
+    max-width: calc(50% - 24px);
+  }
+  @include tablet {
+    max-width: 100%;
+  }
+  .news_card_content {
+    text-align: left;
+  }
+  .news_card_img_container {
+    background-color: $white2;
+    border-radius: 16px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .news_card_img {
+    height: 100px;
+    padding: 10px;
+    @include tablet {
+      margin-bottom: 12px;
+    }
+  }
+  .news_card_title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .news_card_description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: $blueLight;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 24px;
+    @include tablet {
+      margin-bottom: 16px;
+    }
+  }
+  .news_card_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .news_card_date {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      color: $blueLight;
+    }
+    .news_card_btn {
+      padding: 8px;
+      border-radius: 8px;
+      background-color: $white2;
+      display: flex;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  a {
+    background-color: $white;
+  }
+}

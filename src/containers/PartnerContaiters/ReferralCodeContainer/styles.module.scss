@@ -1,0 +1,45 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.partner_container {
+  margin-bottom: 48px;
+  @include laptop {
+    margin-bottom: 32px;
+  }
+  @include tablet {
+    margin-bottom: 24px;
+  }
+}
+
+.partner_content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+
+.partner_copy {
+  position: relative;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .partner_copy_label {
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+
+.partner_copy_btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  height: 56px;
+  @include tablet {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+}

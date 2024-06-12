@@ -20,6 +20,7 @@ export enum Endpoint {
   PoolStatistic = '/affiliate/pool/statistic',
   PoolUsers = '/affiliate/participants/',
   News = '/news/',
+  Documents = '/documents/',
 
   ConnectUs = '/accounts/feedback/',
   Registration = '/accounts/register/',
@@ -28,4 +29,6 @@ export enum Endpoint {
   SignIn = '/accounts/login/',
   SignOut = '/accounts/logout/',
   Refresh = '/accounts/refresh/',
+
+  country = 'https://restcountries.com/v3.1/all',
 }

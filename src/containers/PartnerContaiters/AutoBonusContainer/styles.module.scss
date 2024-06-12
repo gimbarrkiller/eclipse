@@ -1,0 +1,120 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.auto_bonus_container {
+  margin-bottom: 48px;
+  @include laptop {
+    margin-bottom: 32px;
+  }
+  @include tablet {
+    margin-bottom: 24px;
+  }
+}
+
+.auto_bonus_top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+  @include laptop {
+    flex-direction: column;
+    align-items: start;
+  }
+  @include tablet {
+    gap: 12px;
+  }
+  .auto_bonus_top_title {
+    margin-bottom: 0;
+  }
+
+}
+
+.auto_bonus_top_info {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: $blueLight;
+}
+
+.auto_bonus_container_white {
+  padding: 8px;
+  @include scrollbar($white2, $white2, $white2);
+  overflow-x: scroll;
+}
+
+.auto_bonus_table {
+  thead {
+    th {
+      padding: 4px;
+
+      &:nth-child(2) {
+        text-align: left;
+      }
+    }
+  }
+  tbody {
+    td {
+      padding: 4px;
+      @include tablet {
+        padding: 12px 4px;
+      }
+    }
+  }
+}
+
+.auto_bonus_table_car {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.auto_bonus_table_number_sold {
+  width: 80px;
+  text-align: center;
+  padding: 6px 12px;
+  background: $violetLight;
+  border-radius: 6px;
+  color: $white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0 auto;
+  @include tablet {
+    margin-right: 0;
+  }
+}
+
+.auto_bonus_table_number_ref {
+  background: $violetLight1;
+}
+
+.auto_bonus_table_number_reward {
+  background: $blueDark;
+}
+
+.auto_bonus_table_subrow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @include tablet {
+    gap: 8px;
+  }
+  .auto_bonus_table_subrow_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    .auto_bonus_table_subrow_item_first {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: $blueLight;
+      @include tablet {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ $gradientBorderWhiteColor: rgba(255, 255, 255, 0.2);
 $gradientBorderColor: linear-gradient(180deg, $gradientBorderWhiteColor 0%, rgba(255, 255, 255, 0) 100%);
 $gradientOrangeColor: linear-gradient(85.06deg, #AB3232 0.89%, #EA6022 100%);
 $gradientOrangeBlackColor: linear-gradient(270deg, #E85F23 59.33%, rgba(232, 95, 35, 0) 104%);
+$gradientBlueVioletColor: linear-gradient(256.88deg, #051655 1.03%, #5B4BB7 95.55%);
 
 $gradientBlueGray02Color:
 linear-gradient(180deg, rgba(61, 142, 254, 0.2) 0%, rgba(158, 61, 254, 0.2) 100%),
@@ -47,6 +48,7 @@ $blueDark: #051655;
 $orangeDark: #E85A2133;
 $orangeLight: #F58F62;
 $orange: #F98F63;
+$orange2: #E85E23;
 $red: #AB3232;
 
 $green: #2ECC89;

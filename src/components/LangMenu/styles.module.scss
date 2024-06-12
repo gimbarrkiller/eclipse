@@ -1,0 +1,64 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.lang_controls_menu {
+  z-index: 3;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: $white;
+  gap: 16px;
+  box-shadow: $boxShadow;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 12px;
+}
+
+.lang_controls_menu_label {
+  padding: 0;
+  width: 100%;
+  gap: 0;
+  bottom: 100%;
+  top: auto;
+}
+
+.lang_controls_lang {
+  position: relative;
+  border: 1px solid $borderColor;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  height: 48px;
+}
+
+.lang_controls_lang_label {
+  height: auto;
+  border: none;
+  padding: 0;
+  border-radius: 12px;
+
+}
+
+.lang_controls {
+  display: flex;
+  gap: 12px;
+  &_label {
+    padding: 20px 24px;
+    display: flex;
+    gap: 12px;
+    border-radius: 12px;
+    width: 100%;
+  }
+  &_active {
+    background-color: $white2;
+  }
+}
+
+.lang_label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}

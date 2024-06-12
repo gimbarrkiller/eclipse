@@ -1,0 +1,5 @@
+export enum ConnectUsActionType {
+  SetState = 'CONNECT_US.SET_STATE',
+  GET_FULL_LIST = 'CONNECT_US.GET_FULL_LIST',
+  POST_DATA = 'CONNECT_US.POST_DATA',
+}

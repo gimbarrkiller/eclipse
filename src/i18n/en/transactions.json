@@ -1,0 +1,18 @@
+{
+  "Transactions_": "Transactions",
+  "Transactions_type_": "Type",
+  "Transactions_number_pay_": "Payment Number",
+  "Transactions_sum_": "Amount",
+  "Transactions_date_": "Date",
+  "Transactions_status_": "Status",
+  "Transactions_withdrawal_": "Withdrawal",
+  "New": "New",
+  "Pending": "Pending",
+  "Closed": "Closed",
+  "in_progress": "In progress",
+  "decline": "Decline",
+  "Transactions_affiliate_reward_": "Affiliate reward",
+  "Transactions_list_is_empty_": "Transaction list is empty...",
+  "Showing_out_of_profiles_": "Showing {{count}} out of {{totalCount}} profiles",
+  "Search_by_ID_": "Search by ID or Payment Number"
+}

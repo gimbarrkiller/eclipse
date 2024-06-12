@@ -9,6 +9,7 @@ import { StatusEffects } from './status/sagas';
 import { PoolEffects } from './pool/sagas';
 import { AuthEffects } from './auth/sagas';
 import { NewsEffects } from './news/sagas';
+import { DocumentsEffects } from './documents/sagas';
 
 export default function* rootSaga() {
   yield all([
@@ -21,5 +22,6 @@ export default function* rootSaga() {
     ...PoolEffects,
     ...AuthEffects,
     ...NewsEffects,
+    ...DocumentsEffects,
   ]);
 }

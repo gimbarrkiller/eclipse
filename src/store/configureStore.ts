@@ -21,6 +21,7 @@ const authPersistConfig = {
   storage,
   whitelist: [
     'accessToken',
+    'country',
   ] as Array<keyof AuthState>,
 };
 
@@ -46,6 +47,7 @@ const profilePersistConfig = {
     'telegram',
     'balance',
     'id',
+    'isLicense',
     'referralCode',
     'rank',
   ] as Array<keyof ProfileState>,

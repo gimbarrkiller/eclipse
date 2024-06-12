@@ -18,3 +18,4 @@ export * from 'store/pool/types';
 export * from 'store/auth/types';
 export * from 'store/news/types';
 export * from 'store/types';
+export * from 'store/documents/types';

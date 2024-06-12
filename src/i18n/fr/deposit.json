@@ -1,0 +1,23 @@
+{
+  "Withdraw_funds_": "Retirer des fonds",
+  "Enter_amount_": "Entrer le montant",
+  "Requisites_": "Détails",
+  "Comment_": "Commentaire",
+  "Deposit_funds_": "Recharger le compte",
+  "Operation_success_": "L'opération a réussi",
+  "Withdraw_in_euros_": "Je souhaite retirer en euros",
+  "Amount_euro_rate_": "Montant en euros",
+  "Receiving_country_": "Pays destinataire ",
+  "Name_": "Nom",
+  "Address_": "Adresse",
+  "City_": "Ville",
+  "Country_": "Pays",
+  "IBAN_": "IBAN",
+  "SWIFT_": "SWIFT",
+  "Bank_account_": "Compte bancaire",
+  "Correspondent_account_": "Compte correspondant",
+  "Bank_name_": "Nom de la banque",
+  "SWIFT_code_": "Code SWIFT",
+  "Bank_address_": "Adresse de la banque",
+  "Minimum_withdrawal_amount_": "le montant minimum de retrait est d'au moins 100 $"
+}

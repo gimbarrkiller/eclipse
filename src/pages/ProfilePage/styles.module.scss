@@ -1,0 +1,18 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.profile_container {
+  margin-bottom: 48px;
+  @include laptop {
+    margin-bottom: 32px;
+  }
+  @include tablet {
+    margin-bottom: 24px;
+  }
+}
+
+.profile_form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

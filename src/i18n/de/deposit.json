@@ -1,0 +1,23 @@
+{
+  "Withdraw_funds_": "Geld abheben",
+  "Enter_amount_": "Geben Sie den Betrag ein",
+  "Requisites_": "Einzelheiten",
+  "Comment_": "Kommentar",
+  "Deposit_funds_": "Konto aufladen",
+  "Operation_success_": "Die Operation war erfolgreich",
+  "Withdraw_in_euros_": "Ich möchte in Euro abheben",
+  "Amount_euro_rate_": "Betrag in Euro",
+  "Receiving_country_": "Empfangsland",
+  "Name_": "Name",
+  "Address_": "Adresse",
+  "City_": "Stadt",
+  "Country_": "Land",
+  "IBAN_": "IBAN",
+  "SWIFT_": "SWIFT",
+  "Bank_account_": "Bankkonto",
+  "Correspondent_account_": "Korrespondenzkonto",
+  "Bank_name_": "Bankname",
+  "SWIFT_code_": "SWIFT-Code",
+  "Bank_address_": "Bankadresse",
+  "Minimum_withdrawal_amount_": "Der Mindestauszahlungsbetrag beträgt mindestens 100 $"
+}

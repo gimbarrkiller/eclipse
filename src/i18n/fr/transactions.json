@@ -1,0 +1,18 @@
+{
+  "Transactions_": "Transactions",
+  "Transactions_type_": "Type",
+  "Transactions_number_pay_": "Numéro de paiement",
+  "Transactions_sum_": "Montant",
+  "Transactions_date_": "Date",
+  "Transactions_status_": "Statut",
+  "Transactions_withdrawal_": "Traitement",
+  "New": "Nouveau",
+  "Pending": "Traité",
+  "Closed": "Fermé",
+  "in_progress": "En cours",
+  "decline": "Rejeté",
+  "Transactions_affiliate_reward_": "Récompense d'affiliation",
+  "Transactions_list_is_empty_": "La liste des transactions est vide...",
+  "Showing_out_of_profiles_": "Affichage de {{count}} sur {{totalCount}} profils",
+  "Search_by_ID_": "Recherche par identifiant ou numéro de paiement"
+}

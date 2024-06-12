@@ -1,0 +1,23 @@
+{
+  "Withdraw_funds_": "Withdraw funds",
+  "Enter_amount_": "Enter amount",
+  "Requisites_": "Details",
+  "Comment_": "Comment",
+  "Deposit_funds_": "Add funds",
+  "Operation_success_": "The operation was successful",
+  "Withdraw_in_euros_": "I want to withdraw in euros",
+  "Amount_euro_rate_": "Amount in euros",
+  "Receiving_country_": "Receiving country",
+  "Name_": "Name",
+  "Address_": "Address",
+  "City_": "City",
+  "Country_": "Country",
+  "IBAN_": "IBAN",
+  "SWIFT_": "SWIFT",
+  "Bank_account_": "Bank Account",
+  "Correspondent_account_": "Correspondent account",
+  "Bank_name_": "Bank Name",
+  "SWIFT_code_": "SWIFT code",
+  "Bank_address_": "Bank address",
+  "Minimum_withdrawal_amount_": "Minimum withdrawal amount is at least $100"
+}

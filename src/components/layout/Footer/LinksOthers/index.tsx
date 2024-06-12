@@ -1,5 +1,4 @@
 import React, { FC, memo } from 'react';
-import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 
@@ -15,16 +14,19 @@ export const LinksOthers:FC<ILinksOthers> = memo(({
   classNameContainer,
 }) => {
   const { t } = useTranslation('footer');
+
   return (
     <div className={cn(styles.footer_others, classNameContainer)}>
       {links.map(({ link, title }) => (
-        <NavLink
+        <a
           key={title}
-          to={link}
+          href={link}
+          target="_blank"
+          rel="noreferrer"
           className={styles.footer_navigation_link}
         >
           {t(title)}
-        </NavLink>
+        </a>
       ))}
     </div>
   );

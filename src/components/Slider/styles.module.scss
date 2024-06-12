@@ -1,0 +1,16 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.slick_prev {
+  transform: rotate(90deg);
+  @include tablet {
+    width: 40px;
+  }
+}
+
+.slick_next {
+  transform: rotate(-90deg);
+  @include tablet {
+    width: 40px;
+  }
+}

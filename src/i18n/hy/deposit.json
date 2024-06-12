@@ -1,0 +1,23 @@
+{
+  "Withdraw_funds_": "Հանել դրամները",
+  "Enter_amount_": "Մուտքագրեք գումարը",
+  "Requisites_": "Մանրամասներ",
+  "Comment_": "Մեկնաբանություն",
+  "Deposit_funds_": "Բանկի հաշվին ավելացնել",
+  "Operation_success_": "Վիրահատությունը բարեհաջող է անցել",
+  "Withdraw_in_euros_": "Ես ուզում եմ հանել եվրոյով",
+  "Amount_euro_rate_": "Գումարը եվրոյով",
+  "Receiving_country_": "Ստացման երկիր",
+  "Name_": "Անուն",
+  "Address_": "Հասցե",
+  "City_": "Քաղաք",
+  "Country_": "Երկիր",
+  "IBAN_": "IBAN",
+  "SWIFT_": "SWIFT",
+  "Bank_account_": "Բանկային հաշիվ",
+  "Correspondent_account_": "Կորրեսպոնդենտային հաշիվ",
+  "Bank_name_": "Բանկի անվանում",
+  "SWIFT_code_": "SWIFT կոդ",
+  "Bank_address_": "Բանկի հասցե",
+  "Minimum_withdrawal_amount_": "դուրսբերման նվազագույն գումարը կազմում է առնվազն $100"
+}

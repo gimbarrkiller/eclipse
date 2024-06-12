@@ -1,0 +1,62 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.partner_container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  @include laptop {
+    margin-bottom: 16px;
+  }
+  @include tablet {
+    margin-bottom: 12px;
+    flex-direction: column;
+  }
+}
+.partner_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  .partner_container_text {
+    font-size: 18px;
+    color: $blueLight;
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+  .partner_container_text_error {
+    font-size: 18px;
+    color: $red;
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+}
+
+.partner_copy {
+  position: relative;
+  width: 100%;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .partner_copy_label {
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+.partner_copy_btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  height: 56px;
+  @include tablet {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+}

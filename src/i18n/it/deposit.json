@@ -1,0 +1,23 @@
+{
+  "Withdraw_funds_": "Prelevare fondi",
+  "Enter_amount_": "Inserisci l'importo",
+  "Requisites_": "Dettagli",
+  "Comment_": "Commento",
+  "Deposit_funds_": "Fondi insufficienti sul saldoт",
+  "Operation_success_": "L'operazione è andata a buon fine",
+  "Withdraw_in_euros_": "Voglio prelevare in euro",
+  "Amount_euro_rate_": "Importo in euro",
+  "Receiving_country_": "Paese destinatario ",
+  "Name_": "Nome",
+  "Address_": "Indirizzo",
+  "City_": "Città",
+  "Country_": "Paese",
+  "IBAN_": "IBAN",
+  "SWIFT_": "SWIFT",
+  "Bank_account_": "Conto bancario",
+  "Correspondent_account_": "Conto corrispondente",
+  "Bank_name_": "Nome della banca",
+  "SWIFT_code_": "Codice SWIFT",
+  "Bank_address_": "Indirizzo della banca",
+  "Minimum_withdrawal_amount_": "l'importo minimo di prelievo è di almeno $ 100"
+}

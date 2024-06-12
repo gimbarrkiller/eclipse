@@ -1,0 +1,111 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.main_container {
+  background-image: url(../../assets/images/main_laptop.png);
+  background-position: top left calc((100% - 1000px) / 2 + 960px), top center;
+  background-repeat: no-repeat;
+  @include laptop {
+    background-image: none;
+  }
+}
+
+.main_content {
+  display: flex;
+  align-items: flex-start;
+  margin: 80px auto 120px;
+  padding: 0 24px;
+  max-width: 1248px;
+  @include laptop {
+    justify-content: center;
+    margin: 64px 0 100px;
+  }
+  @include tablet {
+    margin: 48px 0 60px;
+    padding: 0 12px;
+  }
+}
+
+.main_half_second {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  @include tablet {
+    height: 50vh;
+    margin-left: 0;
+    max-height: 500px;
+  }
+}
+
+.ellipse_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  max-width: 100%;
+}
+
+.ellipse_2 {
+  position: absolute;
+  bottom: -3%;
+  right: 0;
+  z-index: -1;
+  max-width: 80%;
+  @include mobile {
+    display: none;
+  }
+}
+
+.main_half_first {
+  margin-right: 20px;
+  padding: 40px;
+  max-width: 488px;
+  background: $gradientBlueGray02Color;
+  border-image-source: $gradientBorderColor;
+  box-shadow: $boxShadow;
+  border-radius: 20px;
+
+  width: 100%;
+  z-index: 1;
+  @include laptop {
+    margin-right: 0;
+  }
+  @include tablet {
+    padding: 24px 12px;
+  }
+}
+
+.main_title {
+  @include titleGradient;
+  text-align: center;
+  margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 12px;
+  }
+}
+
+.main_subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.main_form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include tablet {
+    gap: 12px;
+  }
+}
+
+.main_btn {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  @include tablet {
+    margin-top: 4px;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,59 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.instruments_container {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
+
+  .instruments_content {
+    margin-bottom: 24px;
+
+    .instruments_content_top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      .instruments_content_title {
+        margin-bottom: 0;
+      }
+    }
+
+    .instruments_item {
+      margin: 0 5px;
+      box-shadow: none;
+      @include tablet {
+        text-align: center;
+        margin: 0 20px;
+      }
+    }
+    .instruments_img {
+      width: 100%;
+      margin-bottom: 12px;
+      border-radius: 16px;
+    }
+    .instruments_title {
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    .instruments_btn {
+      padding: 8px;
+      border-radius: 8px;
+      background-color: $white2;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .instruments_lang {
+      flex-direction: row;
+      top: 0;
+      left: 100%;
+      @include tablet {
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+      }
+    }
+  }
+}

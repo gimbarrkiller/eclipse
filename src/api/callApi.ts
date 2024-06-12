@@ -11,14 +11,16 @@ export function* callApi(options: {
   endpoint: string;
   /* eslint-disable @typescript-eslint/no-explicit-any */
   payload?: Record<string, any>;
+  isNotEclipse?: boolean;
 }): SagaIterator {
   const {
     method = 'GET',
     endpoint,
     payload,
+    isNotEclipse,
   } = options;
 
-  const url = `${baseUrlApi}${endpoint}`;
+  const url = isNotEclipse ? endpoint : `${baseUrlApi}${endpoint}`;
 
   const body = JSON.stringify(payload);
 

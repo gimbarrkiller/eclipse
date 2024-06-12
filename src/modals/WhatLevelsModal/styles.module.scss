@@ -1,0 +1,40 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.what_lvl_table {
+  thead tr th {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $blueDark;
+    @include tablet {
+      font-size: 12px;
+      line-height: 18px;
+
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+  .what_lvl_table_text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    @include tablet {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .what_lvl_table_text_big {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: right;
+    @include tablet {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+

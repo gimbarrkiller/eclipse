@@ -15,3 +15,6 @@ export * from './PoolPage';
 export * from './NewsPage';
 export * from './NewsItemPage';
 export * from './InstrumentsPage';
+export * from './FAQPage';
+export * from './DocumentsPage';
+export * from './DocumentItemPage';

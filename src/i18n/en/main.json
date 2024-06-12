@@ -11,10 +11,11 @@
   "Oops_": "Oops... Page not found",
   "Something_wrong_": "Something went wrong\nPage not found or does not exist",
   "Go_back_": "Go back",
-  "Seller_": "Seller",
-  "Advanced_Seller_": "Advanced seller",
-  "Premium_Seller_": "Premium seller",
-  "Top_Seller_": "Top seller",
+  "seller": "Seller",
+  "advanced_seller": "Advanced seller",
+  "premium_seller": "Premium seller",
+  "top_seller": "Top seller",
+  "None": "No status",
   "Jan_": "Jan",
   "Feb_": "Feb",
   "Mar_": "Mar",
@@ -26,5 +27,9 @@
   "Sep_": "Sep",
   "Oct_": "Oct",
   "Nov_": "Nov",
-  "Dec_": "Dec"
+  "Dec_": "Dec",
+
+  "Expectation_": "Expectation",
+  "Accept_": "Accept",
+  "Reject_": "Reject"
 }

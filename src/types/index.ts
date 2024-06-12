@@ -5,6 +5,8 @@ export type FormStateType = 'form' | 'confirm' | 'success';
 
 export interface IAutontificationComponent {
   onChange: (n: FormStateType) => void;
+  email?: string;
+  setEmail?: (n: string) => void;
 }
 
 export interface FileObjectType extends File {

@@ -1,0 +1,133 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.status_container_white {
+  padding: 8px;
+  @include scrollbar($white2, $white2, $white2);
+  overflow-x: scroll;
+}
+
+.status_table {
+  tbody {
+    td {
+      @include tablet {
+        padding: 12px 4px;
+      }
+    }
+  }
+}
+
+.status_table_avatar_name {
+  display: flex;
+  gap: 12px;
+  text-align: left;
+  .status_table_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .status_table_name_id {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    .status_table_name {
+      text-wrap: nowrap;
+      color: $blueDark;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+    }
+
+    .status_table_id {
+      text-wrap: nowrap;
+      color: $blueLight;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      display: flex;
+      gap: 4px;
+    }
+  }
+}
+
+.status_table_number_sold {
+  padding: 6px 12px;
+  background: $violetLight;
+  border-radius: 6px;
+  width: fit-content;
+  color: $white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0 auto;
+  @include tablet {
+    margin-right: 0;
+  }
+}
+
+.status_table_number_active {
+  background: $violetLight1;
+}
+
+.status_table_turnover {
+  text-wrap: nowrap;
+}
+
+.status_container_white_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px;
+  @include laptop {
+    padding: 12px;
+  }
+  @include tablet {
+    justify-content: center;
+  }
+}
+
+.status_container_showing {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: $blueLight;
+}
+
+.status_table_subrow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @include tablet {
+    gap: 8px;
+  }
+  .status_table_subrow_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    .status_table_subrow_item_first {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: $blueLight;
+      @include tablet {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+    .status_table_subrow_item_second {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+      text-align: right;
+      color: $blueDark;
+      @include tablet {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+}

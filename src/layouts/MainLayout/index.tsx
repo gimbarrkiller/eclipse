@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { Outlet, useLocation } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { PathName, ScreenWidth } from 'appConstants';
 import { useScreenWidth } from 'hooks';
 import { authSelectors } from 'store/auth/selectors';
+import { getProfileData } from 'store/profile/actionCreators';
 
 import { HeaderMain, Sidebar } from 'components';
 import { ModalLayer } from 'layouts';
@@ -14,6 +15,7 @@ import styles from './styles.module.scss';
 
 export const MainLayout = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const isLaptop = useScreenWidth(ScreenWidth.laptop);
   const accessToken = useSelector(authSelectors.getProp('accessToken'));
   const { pathname } = useLocation();
@@ -22,8 +24,10 @@ export const MainLayout = () => {
   useEffect(() => {
     if (!accessToken) {
       navigate(PathName.Home);
+      return;
     }
-  }, [accessToken, navigate]);
+    dispatch(getProfileData());
+  }, [accessToken, navigate, dispatch]);
 
   useEffect(() => {
     if (layoutDiv && pathname) {

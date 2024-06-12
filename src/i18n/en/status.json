@@ -1,0 +1,33 @@
+{
+  "Statuses_": "Statuses",
+  "Status_conditions_": "Status Conditions",
+  "Have_purchased_annual_license_": "Have a purchased annual license",
+  "Personal_sales_": "Personal license sales: UP TO {{amount}}",
+  "Team_license_sales_": "Team license sales: UP TO {{amount}}",
+  "Personal_sales2_": "Personal license sales: {{amount}}",
+  "Team_license_sales2_": "Team license sales: {{amount}}",
+  "Number_active_personal_licenses_": "Number of active personal licenses",
+  "Number_vertical_branches_": "Number of vertical branches",
+  "Number_team_license_sales_": "Number of team license sales (active)",
+  "Number_license_sales_top_team_": "Number of team license sales by the top team",
+  "Reward_": "Reward",
+  "Referral_": "Referral",
+  "Active_status_": "Activity status",
+  "Number_license_sales_": "Number of license sales (active)",
+  "Number_referrals_active_": "Number of referrals (active)",
+  "Sales_amount_": "Sales amount",
+  "Active_": "Active",
+
+  "Showing_out_of_profiles_": "Showing {{count}} out of {{totalCount}} profiles",
+  "Referral_list_is_empty_": "Referral list is empty...",
+  "Updated_once_every_": "Updated once every 3 months. Next update date: {{time}}",
+
+  "Pools_": "Pools",
+  "Number_participants_current_pool_": "Number of participants in the current pool",
+  "Number_active_referral_licenses_": "Number of active referral licenses",
+  "Number_branches_": "Number of branches",
+  "Balance_within_pool_": "Balance within the pool",
+  "Pool_participant_": "Pool participant",
+  "Number_referrals_": "Number of referrals",
+  "Total_licenses_sold_personally_referrals_": "Total number of licenses sold personally and by referrals"
+}

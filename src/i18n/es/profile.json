@@ -1,0 +1,18 @@
+{
+  "Avatar_": "Avatar",
+  "Avatar_info_": "El tamaño de cada archivo no debe superar los 2 MB. Se permiten los formatos: png, jpeg, jpg, gif, pdf.",
+  "Select_file_": "Seleccionar archivo",
+  "Personal_info_": "Información personal",
+  "Last_name_": "Apellido",
+  "First_name_": "Nombre",
+  "Father_name_": "Paterno",
+  "Email_": "Correo electrónico",
+  "Phone_number_": "Número de teléfono",
+  "Telegram_login_": "Usuario de Telegram",
+  "Password_": "Contraseña",
+  "Old_password_": "Contraseña antigua",
+  "New_password_": "Nueva contraseña",
+  "Repeat_new_password_": "Repita la nueva contraseña",
+  "Save_changes_": "Guardar cambios",
+  "Saved_change_": "Datos guardados correctamente"
+}

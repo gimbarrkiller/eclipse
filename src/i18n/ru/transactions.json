@@ -1,0 +1,17 @@
+{
+  "Transactions_": "Транзакции",
+  "Transactions_type_": "Тип",
+  "Transactions_number_pay_": "Номер платежа",
+  "Transactions_sum_": "Сумма",
+  "Transactions_date_": "Дата",
+  "Transactions_status_": "Статус",
+  "Transactions_withdrawal_": "Вывод",
+  "New": "Новый",
+  "Pending": "В обработке",
+  "Closed": "Закрыт",
+  "in_progress": "В процессе",
+  "decline": "Отклонен",
+  "Transactions_affiliate_reward_": "Партнерское вознаграждение",
+  "Transactions_list_is_empty_": "Список транзакций пуст...",
+  "Showing_out_of_profiles_": "Показано {{count}} из {{totalCount}} профилей"
+}

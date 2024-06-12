@@ -1,0 +1,29 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.charts_container {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  @include laptop {
+    margin-bottom: 32px;
+    flex-direction: column;
+    gap: 32px;
+  }
+  @include tablet {
+    margin-bottom: 24px;
+    gap: 24px;
+  }
+}
+
+.charts_item {
+  width: 50%;
+  @include laptop {
+    width: 100%;
+  }
+}
+
+.charts_item_graph {
+  height: 390px;
+}

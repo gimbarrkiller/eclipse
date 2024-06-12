@@ -11,10 +11,11 @@
   "Oops_": "Ops... Pagina non trovata",
   "Something_wrong_": "Qualcosa è andato storto\nPagina non trovata o non esistente",
   "Go_back_": "Tornare indietro",
-  "Seller_": "Venditore",
-  "Advanced_Seller_": "Venditore avanzato",
-  "Premium_Seller_": "Venditore premium",
-  "Top_Seller_": "Miglior venditore",
+  "seller": "Venditore",
+  "advanced_seller": "Venditore avanzato",
+  "premium_seller": "Venditore premium",
+  "top_seller": "Miglior venditore",
+  "None": "No status",
   "Jan_": "Gen",
   "Feb_": "Feb",
   "Mar_": "Mar",
@@ -26,5 +27,9 @@
   "Sep_": "Set",
   "Oct_": "Ott",
   "Nov_": "Nov",
-  "Dec_": "Dic"
+  "Dec_": "Dic",
+
+  "Expectation_": "Aspettativa",
+  "Accept_": "Accettare",
+  "Reject_": "Rifiutare"
 }

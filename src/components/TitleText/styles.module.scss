@@ -1,0 +1,14 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $blueDark;
+  margin-bottom: 24px;
+  @include tablet {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}

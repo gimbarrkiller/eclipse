@@ -1,0 +1,28 @@
+@media screen and (max-width: 1024px) {
+  .slick-next {
+    right: -12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slick-next {
+    right: 4px;
+  }
+}
+
+.slick-next:before {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .slick-prev {
+    left: -12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slick-prev {
+    left: -20px;
+  }
+}
+
+.slick-prev:before {
+  display: none;
+}

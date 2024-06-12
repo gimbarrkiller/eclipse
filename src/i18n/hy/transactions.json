@@ -1,0 +1,18 @@
+{
+  "Transactions_": "Փոխանցումներ",
+  "Transactions_type_": "Տեսակ",
+  "Transactions_number_pay_": "Վճարման համար",
+  "Transactions_sum_": "Գումար",
+  "Transactions_date_": "Ամսաթիվ",
+  "Transactions_status_": "Կարգավիճակ",
+  "Transactions_withdrawal_": "Withdrawal",
+  "New": "Մշակում",
+  "Pending": "Մշակված",
+  "Closed": "Մերժված",
+  "in_progress": "Ընթացքում",
+  "decline": "Մերժված է",
+  "Transactions_affiliate_reward_": "Affiliate reward",
+  "Transactions_list_is_empty_": "Transaction list is empty...",
+  "Showing_out_of_profiles_": "Ցուցադրվում է {{count}} անձերից {{totalCount}} անձ",
+  "Search_by_ID_": "Որոնել ըստ ID-ի կամ վճարման համարի"
+}

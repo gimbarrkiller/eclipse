@@ -1,0 +1,23 @@
+{
+  "Withdraw_funds_": "Retirar",
+  "Enter_amount_": "Introducir importe",
+  "Requisites_": "Detalles",
+  "Comment_": "Comentario",
+  "Deposit_funds_": "Añadir fondos",
+  "Operation_success_": "La operación se ha realizado correctamente",
+  "Withdraw_in_euros_": "quiero retirar en euros",
+  "Amount_euro_rate_": "Importe en euros",
+  "Receiving_country_": "País receptor ",
+  "Name_": "Nombre",
+  "Address_": "Dirección",
+  "City_": "Ciudad",
+  "Country_": "País",
+  "IBAN_": "IBAN",
+  "SWIFT_": "SWIFT",
+  "Bank_account_": "Número de cuenta bancaria",
+  "Correspondent_account_": "Número de cuenta corriente",
+  "Bank_name_": "Nombre del banco",
+  "SWIFT_code_": "Código SWIFT",
+  "Bank_address_": "Dirección del banco",
+  "Minimum_withdrawal_amount_": "el monto mínimo de retiro es de al menos $100"
+}

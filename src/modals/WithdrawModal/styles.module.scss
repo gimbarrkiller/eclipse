@@ -1,0 +1,41 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.deposit_container {
+  overflow-y: auto;
+  @include scrollbar($transparent, $transparent, $transparent);
+}
+
+.deposit_img {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.deposit_title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 24px;
+  @include tablet {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
+
+.deposit_input {
+  margin-bottom: 16px;
+  font-size: 12px;
+  width: 100%;
+  @include tablet {
+    margin-bottom: 12px;
+  }
+}
+
+.deposit_input_text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}

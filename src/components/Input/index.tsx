@@ -29,6 +29,7 @@ type InputProps = {
   error?: string | undefined;
   isPassword?: boolean;
   label?: string;
+  classNameLabel?: string;
   suffix?: ReactNode;
   icon?: string;
   type?: string;
@@ -49,6 +50,7 @@ export const Input = memo<InputProps>(({
   rows = 1,
   error,
   label,
+  classNameLabel,
   type,
   suffix,
   icon,
@@ -100,7 +102,7 @@ export const Input = memo<InputProps>(({
       >
         {label && (
           <div
-            className={cn(styles.input_label, {
+            className={cn(styles.input_label, classNameLabel, {
               [styles.input_label_focus]: !!value,
             })}
           >

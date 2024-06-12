@@ -1,0 +1,23 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.container__copy_text {
+  display: flex;
+  gap: 12px;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.disabled {
+  opacity: 0.7;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

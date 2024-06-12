@@ -1,0 +1,233 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.structure_lvl {
+  overflow-x: auto;
+  @include scrollbar($white2, $white2, $white2);
+}
+.structure_lvl_container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.structure_lvl_content {
+  height: fit-content;
+  min-width: 190px;
+  width: fit-content;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-shadow: none;
+}
+
+.structure_lvl_top {
+  background-color: $white2;
+  border-radius: 20px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 206px;
+}
+.structure_lvl_title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  .structure_lvl_title_orange {
+    color: $orange2;
+    font-size: 18px;
+  }
+}
+
+.structure_lvl_top_info {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  .structure_lvl_top_info_label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $blueLight;
+  }
+  .structure_lvl_top_info_value {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: right;
+  }
+}
+
+.structure_lvl_modal_top_info {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  .structure_lvl_modal_top_info_label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $blueLight;
+    text-align: left;
+  }
+  .structure_lvl_modal_top_info_value {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+}
+
+.structure_lvl_modal {
+  z-index: 1;
+  width: 250px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .structure_lvl_modal_line {
+    border-radius: 8px;
+  }
+
+  .structure_lvl_modal_name_id {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+  }
+  .structure_lvl_modal_name {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+  }
+  .structure_lvl_modal_id {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .structure_lvl_modal_second_data {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .structure_lvl_modal_top_info_value {
+    font-weight: 700;
+  }
+}
+
+.structure_lvl_users {
+  display: flex;
+  flex-direction: column;
+  .structure_lvl_none {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 24px 12px;
+    color: $blueLight;
+  }
+  .structure_lvl_users_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .structure_lvl_users_item_active_parent {
+      background-color: $blueDark;
+      border-radius: 20px;
+      .structure_lvl_users_item_name {
+        color: $white;
+      }
+    }
+    .structure_lvl_users_item_active {
+      background-color: $orange2;
+      border-radius: 20px;
+      .structure_lvl_users_item_name {
+        color: $white;
+      }
+    }
+    .structure_lvl_users_item_img {
+      width: 32px;
+      margin: 12px 0;
+      border-radius: 8px;
+    }
+    .structure_lvl_users_item_name {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 18px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .structure_lvl_users_item_info {
+      position: absolute;
+      top: 8px;
+      right: 4px;
+    }
+    &:last-child {
+      .structure_line {
+        display: none;
+      }
+    }
+  }
+}
+
+.structure_line {
+  width: 100%;
+  height: 1px;
+  background-color: $white1;
+}
+
+.structure_show_more_btn {
+  margin: 0 auto 24px;
+}
+
+.structure_lvl_top_first {
+  background: $gradientOrangeColor;
+  .structure_lvl_title {
+    color: $white;
+    .structure_lvl_title_percent {
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
+  .structure_lvl_top_info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .structure_lvl_top_info_label {
+    color: $white;
+  }
+  .structure_lvl_top_info_value {
+    color: $white;
+  }
+}
+
+.structure_lvl_top_status {
+  min-height: 250px;
+}
+
+.structure_lvl_top {
+  .structure_lvl_top_info_first {
+    display: none;
+  }
+}
+
+.td_no_data_div {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .td_no_data_div_icon {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+
+.structure_lvl_top_info_value_status {
+  color: $white;
+  text-transform: uppercase;
+}

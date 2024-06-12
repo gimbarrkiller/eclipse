@@ -1,0 +1,121 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.my_tickets_container {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.my_tickets_top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+  @include tablet {
+    flex-direction: column;
+    align-items: start;
+  }
+  .my_tickets_top_title {
+    margin-bottom: 0;
+  }
+
+  .my_tickets_top_select {
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
+
+.no_data {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  .no_data_div {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: $blueLight;
+    @include tablet {
+      font-size: 14px;
+      gap: 16px;
+    }
+  }
+}
+.my_tickets_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include tablet {
+    gap: 12px;
+  }
+}
+
+.my_tickets_card {
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .my_tickets_card_top {
+    margin-bottom: 16px;
+    @include tablet {
+      margin-bottom: 12px;
+    }
+    .my_tickets_card_top_id {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    .my_tickets_card_top_date {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      text-align: right;
+      color: $blueLight;
+    }
+  }
+  .my_tickets_card_theme {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: $blueLight;
+    margin-bottom: 8px;
+  }
+  .my_tickets_card_question {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 24px;
+    @include tablet {
+      margin-bottom: 16px;
+    }
+  }
+
+  .my_tickets_card_btn {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+
+    padding: 12px 32px;
+    border-radius: 8px;
+    background-color: $white2;
+  }
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  a {
+    background-color: $white;
+  }
+}

@@ -1,0 +1,107 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.sidebar {
+  color: $blueLight;
+  background-color: $white;
+  grid-area: sidebar;
+  width: 288px;
+  height: 100vh;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.header_logo_container {
+  background: $gradientBlueVioletColor;
+  padding: 12px 32px;
+  width: calc(100% - 32px);
+  border-radius: 0 0 40px 0;
+  height: 88px;
+  @include laptop {
+    height: 64px;
+    opacity: 0;
+  }
+  @include tablet {
+    height: 56px;
+  }
+}
+
+.sidebar_logo {
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 0 32px;
+  @include scrollbar($white);
+  overflow-y: scroll;
+  @include laptop {
+    padding: 0 24px;
+  }
+  @include tablet {
+    height: calc(var(--vh, 1vh) * 100 - 120px);
+  }
+}
+
+.sidebar_balance {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px;
+  border: 1px solid $white1;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.sidebar_balance_text {
+  color: $blueDark;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+
+.sidebar_id {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $blueLight;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.sidebar_menu {
+  padding: 20px 24px;
+  display: flex;
+  gap: 12px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.sidebar_menu_text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+
+.sidebar_lang_hover {
+  &:hover {
+    background-color: $white2;
+  }
+}
+
+.sidebar_bottom {
+  position: sticky;
+  bottom: -1px;
+  background-color: $white;
+  box-shadow: 0px -8px 10px -5px rgba(0, 0, 0, 0.168627451);
+  border-radius: 8px;
+}

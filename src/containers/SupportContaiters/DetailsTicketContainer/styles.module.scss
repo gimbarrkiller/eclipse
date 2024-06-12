@@ -1,0 +1,73 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.detail {
+  width: 300px;
+  height: auto;
+  max-height: 550px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  @include scrollbar($white);
+  @include laptop {
+    width: 100%;
+    min-height: -webkit-fill-available;
+    height: auto;
+  }
+}
+
+.detail_rows {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include tablet {
+    gap: 8px;
+  }
+  .detail_row {
+    display: flex;
+    justify-content: space-between;
+    .detail_row_key {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      color: $blueLight;
+    }
+    .detail_row_value {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: left;
+    }
+  }
+  .detail_row_file {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    .detail_row_file_info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .detail_row_file_info_name {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+      .detail_row_file_info_date {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        color: $blueLight;
+      }
+    }
+  }
+}
+
+.detail_line {
+  height: 1px;
+  width: 100%;
+  background-color: $white1;
+  margin: 24px 0;
+  @include tablet {
+    margin: 12px 0;
+  }
+}

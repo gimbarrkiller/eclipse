@@ -1,0 +1,28 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.sidebar_navigation {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.sidebar_navigation_link {
+  padding: 20px 24px;
+  display: flex;
+  gap: 12px;
+  border-radius: 12px;
+  &:hover {
+    background-color: $white2;
+  }
+}
+
+.sidebar_navigation_link_text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.active {
+  background-color: $white2;
+}

@@ -1,0 +1,24 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.status {
+  padding: 6px 12px;
+  border-radius: 6px;
+  width: fit-content;
+  color: $white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  height: fit-content;
+  background: $violetLight;
+  @include tablet {
+    margin-right: 0;
+  }
+}
+
+.status_processed {
+  background: $green;
+}
+.status_rejected {
+  background: $orange;
+}

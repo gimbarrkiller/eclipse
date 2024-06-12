@@ -1,0 +1,24 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.terms_container {
+  overflow-y: auto;
+  @include scrollbar($transparent, $transparent, $transparent);
+}
+
+.terms_view {
+  margin-bottom: 16px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+.terms_btns {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}

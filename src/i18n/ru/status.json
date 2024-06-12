@@ -1,0 +1,31 @@
+{
+  "Statuses_": "Статусы",
+  "Status_conditions_": "Условия статуса",
+  "Have_purchased_annual_license_": "Иметь купленную годовую лицензию",
+  "Personal_sales_": "Личные продажи лицензий в количестве {{amount}} штук",
+  "Team_license_sales_": "Командные продажи лицензий в количестве {{amount}} штук",
+  "Number_active_personal_licenses_": "Кол-во активных лицензий (личных)",
+  "Number_vertical_branches_": "Кол-во вертикальных веток",
+  "Number_team_license_sales_": "Кол-во проданных лицензий командой (активных)",
+  "Number_license_sales_top_team_": "Кол-во проданных лицензий лучшей командой",
+  "Reward_": "Награда",
+  "Referral_": "Реферал",
+  "Active_status_": "Статус активности",
+  "Number_license_sales_": "Кол-во проданных лицензий (активных)",
+  "Number_referrals_active_": "Кол-во рефералов (активных)",
+  "Sales_amount_": "Сумма продаж",
+  "Active_": "Активен",
+
+  "Showing_out_of_profiles_": "Показано {{count}} из {{totalCount}} профилей",
+  "Referral_list_is_empty_": "Список рефералов пуст...",
+  "Updated_once_every_": "Обновляется один раз в 3 месяца. След. дата обновления: {{time}}",
+
+  "Pools_": "Пулы",
+  "Number_participants_current_pool_": "Кол-во участников в текущем пуле",
+  "Number_active_referral_licenses_": "Кол-во активных лицензий рефералов",
+  "Number_branches_": "Кол-во веток",
+  "Balance_within_pool_": "Баланс внутри пула",
+  "Pool_participant_": "Участник пула",
+  "Number_referrals_": "Кол-во рефералов",
+  "Total_licenses_sold_personally_referrals_": "Общее количество проданных лицензий лично и рефералами"
+}

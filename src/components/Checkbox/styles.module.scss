@@ -1,0 +1,53 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.checkbox_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: $violetLight;
+    position: relative;
+    transition: all 0.5s;
+
+    &:hover:enabled,
+    &:active {
+      background-color: $violetLight1;
+    }
+
+    .checkbox_icon_checked {
+      opacity: 1;
+    }
+  }
+
+  .checkbox_icon {
+    opacity: 0;
+    background-color: $gray;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    transition: all 0.3s;
+  }
+
+  .checkbox_checked_icon {
+    opacity: 1;
+  }
+
+  .label {
+    margin-left: 8px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+
+
+

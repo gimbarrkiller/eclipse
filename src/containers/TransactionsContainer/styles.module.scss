@@ -1,0 +1,118 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.transactions_container {
+  margin-bottom: 48px;
+  @include laptop {
+    margin-bottom: 32px;
+  }
+  @include tablet {
+    margin-bottom: 24px;
+  }
+  .structure_top_controls_second {
+    height: 48px;
+    margin-bottom: 24px;
+  }
+}
+
+.transactions_container_white {
+  padding: 8px;
+  @include scrollbar($white2, $white2, $white2);
+  overflow-x: scroll;
+}
+
+.transactions_table {
+  thead {
+    th {
+      padding: 8px;
+    }
+  }
+  tbody {
+    td {
+      padding: 4px;
+      @include tablet {
+        padding: 12px 4px;
+      }
+    }
+  }
+}
+
+.transactions_table_type {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.transactions_table_sum {
+  font-weight: 700;
+}
+
+.transactions_table_time {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  @include tablet {
+    justify-content: right;
+  }
+  .transactions_table_subtime {
+    color: $blueLight;
+  }
+}
+
+.transactions_container_white_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px;
+  @include laptop {
+    padding: 12px;
+  }
+  @include tablet {
+    justify-content: center;
+  }
+}
+
+.transactions_container_showing {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: $blueLight;
+}
+
+.transactions_table_subrow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @include tablet {
+    gap: 8px;
+  }
+  .transactions_table_subrow_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    .transactions_table_subrow_item_first {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: $blueLight;
+      @include tablet {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+    .transactions_table_subrow_item_second {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+      text-align: right;
+      color: $blueDark;
+      @include tablet {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+}

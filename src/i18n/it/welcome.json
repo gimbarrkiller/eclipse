@@ -17,8 +17,8 @@
   "Agent_team_turnover_": "Fatturato di squadra",
 
   "Comfort_title_": "Bonus comfort",
-  "Comfort_info_": "Eclipce - Global Hub, un'applicazione, un ecosistema, molte funzioni. Un'app super per il lavoro di squadra.",
-  "Comfort_subinfo_": "Rispettate le scadenze, coordinate i lavori, formate squadre di progetto: quando tutto è su una piattaforma, potete lavorare da qualsiasi luogo. Configurate le integrazioni di Eclipce con tutti i servizi familiari e create il vostro ecosistema di lavoro.",
+  "Comfort_info_": "Eclipse - Global Hub, un'applicazione, un ecosistema, molte funzioni. Un'app super per il lavoro di squadra.",
+  "Comfort_subinfo_": "Rispettate le scadenze, coordinate i lavori, formate squadre di progetto: quando tutto è su una piattaforma, potete lavorare da qualsiasi luogo. Configurate le integrazioni di Eclipse con tutti i servizi familiari e create il vostro ecosistema di lavoro.",
   "Comfort_card_video_": "Comunicazione video e audio.",
   "Comfort_card_video_li_1_": "Chat video.",
   "Comfort_card_video_li_2_": "Videoconferenze.",
@@ -128,5 +128,6 @@
   "Sign_in_password_mismatch_": "Non corrisponde la password",
   "Sign_in_code_send_email_": "link di conferma inviato a {{ email }}",
   "Sign_in_code_resend_": "Codice di conferma inviato di nuovo",
-  "Accept_the_terms_": "Accetto i termini del <1>contratto di agenzia</1>"
+  "Accept_the_terms_": "Accetto i termini del <1>contratto di agenzia</1>",
+  "Sign_in_password_send_email_": "Password inviata a {{ email }}"
 }

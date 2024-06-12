@@ -1,0 +1,18 @@
+{
+  "Transactions_": "Transazioni",
+  "Transactions_type_": "Tipo",
+  "Transactions_number_pay_": "Numero di pagamento",
+  "Transactions_sum_": "Importo",
+  "Transactions_date_": "Data",
+  "Transactions_status_": "Stato",
+  "Transactions_withdrawal_": "Withdrawal",
+  "New": "Elaborazione",
+  "Pending": "Elaborato",
+  "Closed": "Respinto",
+  "in_progress": "In corso",
+  "decline": "Rifiutato",
+  "Transactions_affiliate_reward_": "Affiliate reward",
+  "Transactions_list_is_empty_": "La lista delle transazioni è vuota...",
+  "Showing_out_of_profiles_": "Mostrati {{count}} di {{totalCount}} profili",
+  "Search_by_ID_": "Cerca per ID o numero di pagamento"
+}

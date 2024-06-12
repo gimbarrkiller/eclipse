@@ -1,0 +1,33 @@
+{
+  "Statuses_": "Կարգավիճակներ",
+  "Status_conditions_": "Կարգավիճակի պայմաններ",
+  "Have_purchased_annual_license_": "Ունենալ գնված տարեկան արտոնագիր",
+  "Personal_sales_": "Արտոնագրերի անձնական վաճառքների քանակը՝ ՄԻՆՉԵՎ {{amount}}",
+  "Team_license_sales_": "Արտոնագրերի թիմային վաճառքների քանակը՝ ՄԻՆՉԵՎ {{amount}}",
+  "Personal_sales2_": "Արտոնագրերի անձնական վաճառքների քանակը՝ {{amount}}",
+  "Team_license_sales2_": "Արտոնագրերի թիմային վաճառքների քանակը՝ {{amount}}",
+  "Number_active_personal_licenses_": "Գործող արտոնագրերի քանակը (անձնական) ",
+  "Number_vertical_branches_": "Ուղղակի արտոնագրերի քանակը",
+  "Number_team_license_sales_": "Արտոնագրերի թիմային վաճառքների քանակը (ակտիվ)",
+  "Number_license_sales_top_team_": "Լավագույն թիմի՝ թիմային արտոնագրերի վաճառքների քանակը",
+  "Reward_": "Հավելում",
+  "Referral_": "Ուղղորդման հղում",
+  "Active_status_": "Գործողության կարգավիճակ",
+  "Number_license_sales_": "Արտոնագրերի վաճառքների քանակ (ակտիվ)",
+  "Number_referrals_active_": "Ուղղորդման հղումների քանակ",
+  "Sales_amount_": "Վաճառքների քանակ",
+  "Active_": "Active",
+
+  "Showing_out_of_profiles_": "Ցուցադրվում է {{count}} անձնական էջից {{totalCount}} անձնական էջ",
+  "Referral_list_is_empty_": "Ուղղորդման հղումների ցանկը դատարկ է",
+  "Updated_once_every_": "Թարմացվում է երեք ամիսը մեկ անգամ։ Հաջորդ թարմացման ամսաթիվը: {{time}}",
+
+  "Pools_": "Pools",
+  "Number_participants_current_pool_": "Համայնքում ընդգրկվածների քանակը",
+  "Number_active_referral_licenses_": "Ակտիվ լիցենզիաների քանակը (ակտիվ)",
+  "Number_branches_": "Մակարդակների քանակը",
+  "Balance_within_pool_": "Մակարդակների քանակը ",
+  "Pool_participant_": "Pool-ի անդամ",
+  "Number_referrals_": "Ուղղորդման հղումների քանակ",
+  "Total_licenses_sold_personally_referrals_": "Անձամբ և ուղղորդման հղումների միջոցով վաճառված արտոնագրերի ընդհանուր քանակ"
+}

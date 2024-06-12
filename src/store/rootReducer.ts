@@ -7,6 +7,7 @@ import status from './status/reducer';
 import pool from './pool/reducer';
 import auth from './auth/reducer';
 import news from './news/reducer';
+import documents from './documents/reducer';
 
 export default {
   connectUs,
@@ -18,4 +19,5 @@ export default {
   pool,
   auth,
   news,
+  documents,
 };

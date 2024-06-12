@@ -12,7 +12,7 @@ export enum LocaleKey {
 export const localeNames = {
   [LocaleKey.en]: 'English',
   [LocaleKey.it]: 'Italiano',
-  [LocaleKey.hy]: 'հայերեն',
+  [LocaleKey.hy]: 'Հայերեն',
   [LocaleKey.pt]: 'Português',
   [LocaleKey.es]: 'Español',
   [LocaleKey.de]: 'Deutsch',

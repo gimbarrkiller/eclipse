@@ -17,7 +17,6 @@ import {
   PartnerPage,
   TransactionsPage,
   SupportPage,
-  SupportMyTicketsPage,
   SupportTicketPage,
   NotFoundPage,
   StatusPage,
@@ -25,6 +24,9 @@ import {
   NewsPage,
   NewsItemPage,
   InstrumentsPage,
+  FAQPage,
+  DocumentsPage,
+  DocumentItemPage,
 } from 'pages';
 
 export const Routes = () => {
@@ -102,16 +104,30 @@ export const Routes = () => {
           element={<SupportPage />}
         />
         <Route
-          path={PathName.SupportMyTickets}
-          element={<SupportMyTicketsPage />}
-        />
-        <Route
-          path={PathName.SupportMyTickets}
+          path={PathName.Support}
           element={<SupportTicketPage />}
         >
           <Route
             path={PathName.ItemId}
             element={<SupportTicketPage />}
+          />
+        </Route>
+        <Route
+          path={PathName.Faq}
+          element={<FAQPage />}
+        />
+        <Route
+          path={PathName.Documents}
+          element={<DocumentsPage />}
+        />
+
+        <Route
+          path={PathName.DocumentsItem}
+          element={<DocumentItemPage />}
+        >
+          <Route
+            path={PathName.ItemId}
+            element={<DocumentItemPage />}
           />
         </Route>
         <Route

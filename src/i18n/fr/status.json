@@ -1,0 +1,33 @@
+{
+  "Statuses_": "Statuts",
+  "Status_conditions_": "Conditions de statut",
+  "Have_purchased_annual_license_": "Avoir une licence annuelle achetée",
+  "Personal_sales_": "Ventes de licences personnelles: JUSQU’À {{amount}}",
+  "Team_license_sales_": "Ventes de licences d'équipe: JUSQU’À {{amount}}",
+  "Personal_sales2_": "Ventes personnelles de licences en quantité de {{amount}} pièces",
+  "Team_license_sales2_": "Ventes d'équipe de licences en quantité de {{amount}} pièces",
+  "Number_active_personal_licenses_": "Nombre de licences actives (personnelles)",
+  "Number_vertical_branches_": "Nombre de branches verticales",
+  "Number_team_license_sales_": "Quantité de licences vendues par l'équipe (actives)",
+  "Number_license_sales_top_team_": "Quantité de licences vendues par la meilleure équipe",
+  "Reward_": "Récompense",
+  "Referral_": "Référent",
+  "Active_status_": "État d'activité",
+  "Number_license_sales_": "Quantité de licences vendues (actives)",
+  "Number_referrals_active_": "Quantité de recommandations (actives)",
+  "Sales_amount_": "Montant des ventes",
+  "Active_": "Actif",
+
+  "Showing_out_of_profiles_": "Affichage de {{count}} sur {{totalCount}} profils",
+  "Referral_list_is_empty_": "La liste des références est vide...",
+  "Updated_once_every_": "Mis à jour une fois tous les 3 mois. Prochaine date de mise à jour : {{time}}",
+
+  "Pools_": "Pools",
+  "Number_participants_current_pool_": "Nombre de participants dans le pool actuel",
+  "Number_active_referral_licenses_": "Nombre de licences actives des références",
+  "Number_branches_": "Nombre de branches",
+  "Balance_within_pool_": "Solde à l'intérieur du pool",
+  "Pool_participant_": "Membre du pool",
+  "Number_referrals_": "Nombre de références",
+  "Total_licenses_sold_personally_referrals_": "Nombre total de licences vendues personnellement et par références"
+}

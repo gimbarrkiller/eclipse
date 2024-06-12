@@ -1,0 +1,36 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+.tabs {
+  .tabs_titles {
+    width: fit-content;
+    border-radius: 12px;
+    background-color: $white;
+    display: flex;
+    padding: 4px;
+
+    .tabs_titles_title {
+      height: 56px;
+      list-style: none;
+      padding: 16px 24px;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: $blueLight;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    .tabs_titles_title_active_forever {
+      color: $white;
+      background: $gradientOrangeColor;
+
+    }
+    .tabs_titles_title_active {
+      color: $blueDark;
+      background: $white2;
+    }
+
+  }
+}

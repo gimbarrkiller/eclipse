@@ -1,0 +1,18 @@
+{
+  "Transactions_": "Transações",
+  "Transactions_type_": "Tipo",
+  "Transactions_number_pay_": "Número do pagamento",
+  "Transactions_sum_": "Valor",
+  "Transactions_date_": "Data",
+  "Transactions_status_": "Estado",
+  "Transactions_withdrawal_": "Вывод",
+  "New": "Processamento",
+  "Pending": "Processado",
+  "Closed": "Rejeitado",
+  "in_progress": "Em processo",
+  "decline": "Recusou",
+  "Transactions_affiliate_reward_": "Affiliate reward",
+  "Transactions_list_is_empty_": "A lista de referidos está vazia...",
+  "Showing_out_of_profiles_": "Exibindo {{count}} de {{totalCount}} perfis",
+  "Search_by_ID_": "Pesquise por ID ou número de pagamento"
+}

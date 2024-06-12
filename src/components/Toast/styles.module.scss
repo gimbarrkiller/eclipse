@@ -1,0 +1,36 @@
+@import 'src/assets/styles/palette';
+@import 'src/assets/styles/mixins';
+
+:global .Toastify__toast-body {
+  padding-right: 0;
+  flex-direction: row-reverse;
+  .toast_title {
+    text-align: initial;
+  }
+  .Toastify__toast-icon {
+    margin-right: 0;
+    width: auto;
+}
+}
+:global .Toastify__toast {
+  border-radius: 12px 0 0 12px;
+  padding: 4px 0 4px 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  background: $white;
+  color: $blueDark;
+
+  @include tablet {
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+}
+
+:global .Toastify__toast-container--top-right {
+top: 1em;
+right: 0;
+padding-right: 0;
+}

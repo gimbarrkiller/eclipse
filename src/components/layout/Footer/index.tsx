@@ -5,7 +5,6 @@ import { logoImage, paypassLogosIcon, visaLogosIcon } from 'assets/images';
 
 import { Image } from 'components';
 
-import { LinksFooter } from './LinksFooter';
 import { LinksSocialFooter } from './LinksSocialFooter';
 import { LinksOthers } from './LinksOthers';
 import {
@@ -27,7 +26,6 @@ export const Footer = memo(() => {
         <div className={styles.footer_logo}>
           <Image url={logoImage} />
         </div>
-        <LinksFooter />
         <LinksSocialFooter
           links={linksSocial}
           classNameContainer={styles.footer_social_link}

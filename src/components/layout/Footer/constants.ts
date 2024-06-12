@@ -12,33 +12,6 @@ import {
   linkYoutubeIcon,
 } from 'assets/images';
 
-export const linksApp = [
-  {
-    title: 'Footer_link_1_',
-    pathName: PathName.WhatWeOffer,
-  },
-  {
-    title: 'Footer_link_2_',
-    pathName: PathName.Sellers,
-  },
-  {
-    title: 'Footer_link_3_',
-    pathName: PathName.ConnectUs,
-  },
-  {
-    title: 'Footer_link_4_',
-    pathName: PathName.ConnectUs,
-  },
-  {
-    title: 'Footer_link_5_',
-    pathName: PathName.ConnectUs,
-  },
-  {
-    title: 'Footer_link_6_',
-    pathName: PathName.ConnectUs,
-  },
-];
-
 export const linksSocial = [
   {
     icon: linkTelegramIcon,
@@ -69,30 +42,26 @@ export const linksSocial = [
 export const linksOthers = [
   {
     title: 'Footer_links_others_1_',
-    link: PathName.ConnectUs,
+    link: PathName.LegalInfo,
   },
   {
     title: 'Footer_links_others_2_',
-    link: PathName.ConnectUs,
-  },
-  {
-    title: 'Footer_links_others_3_',
-    link: PathName.ConnectUs,
+    link: PathName.PersonalData,
   },
 ];
 
 export const linksOthers2 = [
   {
     title: 'Footer_links_others_4_',
-    link: PathName.ConnectUs,
+    link: PathName.AntiCorruption,
   },
   {
     title: 'Footer_links_others_5_',
-    link: PathName.ConnectUs,
+    link: PathName.OrderAndProviding,
   },
   {
     title: 'Footer_links_others_6_',
-    link: PathName.ConnectUs,
+    link: PathName.PaymentRules,
   },
 ];
 
